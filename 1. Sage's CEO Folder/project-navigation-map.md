@@ -53,6 +53,7 @@ Rolling record of folder renames, restructures, and moves. Updated live when HK 
 | Date | Session | Change |
 |------|---------|--------|
 | 2026-07-06 | 1 | `4. Named Project - Live Folder/` renamed to `4. Random Projects - Live Folder/` (Phase 0 activation) |
+| 2026-07-06 | 1 | `4. Random Projects - Live Folder/Jot - Personal Notes System/` created (first mini-project subfolder) |
 
 ---
 
@@ -67,7 +68,8 @@ Where we are right now. Updated at session start review and after major phase tr
 | Current phase | Phase 1 — open container operations (Phase 0 activation completed Session 1) |
 | P/M Lead | None — Sophia's lists serve the whole project |
 | Involvement score | 0–1 (full auto; Jay brings direction) |
-| Active mini-projects | None yet — container open and ready |
+| Active mini-projects | Jot — Personal Notes System (SCOPING; awaiting Jay: device list + sync channel) |
+| Jot security gates | Soren CLEARED WITH CONDITIONS — `go mod verify` + `govulncheck` before first build; re-clear any upstream pull |
 | GitHub remote | Not created — local git only (open question in project soul) |
 
 ---

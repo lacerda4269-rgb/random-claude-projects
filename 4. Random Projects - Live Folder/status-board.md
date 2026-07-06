@@ -2,7 +2,7 @@
 
 **Owner:** Sage / Sophia (shared)
 **Project:** Random Projects
-**Updated:** Session 1 — 2026-07-06
+**Updated:** Session 1 — 2026-07-06 (session close)
 
 ---
 
@@ -10,7 +10,7 @@
 
 > *One-line project state. What phase are we in? What is the active focus?*
 
-Container live. First mini-project **Jot — Personal Notes System** is open and in SCOPING — awaiting Jay's product-shape confirmation before any build. Full auto mode (involvement 0–1).
+Phase 0 activation complete; container live and in Phase 1 open operations. First mini-project **Jot — Personal Notes System** is in SCOPING — awaiting Jay's device list + sync channel before any build. Full auto mode (involvement 0–1).
 
 ---
 
@@ -18,8 +18,7 @@ Container live. First mini-project **Jot — Personal Notes System** is open and
 
 *What is actively being worked on right now.*
 
-- **Jot — Personal Notes System** (SCOPING): `board` repo evaluated (Rose) and security-cleared with conditions (Soren). Awaiting Jay's product-shape confirmation before build. Two Soren security gates logged as open items for build time.
-- Phase 0 close-out — COO reporting final activation status back to Sage.
+- **Jot — Personal Notes System** (SCOPING): `board` repo evaluated (Rose) and security-cleared with conditions (Soren). Awaiting Jay's device list + sync channel before build. Two Soren security gates logged as open items for build time.
 
 ---
 
@@ -59,7 +58,9 @@ Container live. First mini-project **Jot — Personal Notes System** is open and
 
 - Phase 0 CEO lane complete (soul, CLAUDE.md, file index, navigation map, agent wiring, git init) — S1.
 - Phase 0 COO lane complete (operational files, session records, lessons log, tracker, status board) — S1.
+- Jot mini-project scoped and logged; provenance resolved; portability requirement added — S1.
+- Governance-doc staleness caught at Step 0 and fixed (all three docs + 3 READMEs); Gotcha Entry 1 logged — S1.
 
 ---
 
-*Updated: Session 1 — 2026-07-06*
+*Updated: Session 1 — 2026-07-06 (session close)*

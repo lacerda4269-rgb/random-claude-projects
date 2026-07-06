@@ -44,14 +44,14 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 
 ## In Progress
 
-- [ ] Phase 0 activation — final COO report back to Sage    _Session 1_
+- [ ] Session 1 close — COO lane complete (Session Summary + Index written, Gotcha logged, Pending Changes queued, governance docs fixed); awaiting Sage's review + Steps 7–8 (local commit)    _Session 1_
 
 ---
 
 ## Up Next
 
-- [ ] Container ready to receive its first mini-project — awaiting Jay to bring one
-- [ ] Session 1 close — write first Session Summary entry per Session-Close-SOP
+- [ ] Jot: Jay confirms product shape (device list + sync channel) before any build
+- [ ] GitHub remote creation (Jay) — then first push (Step 7 is local-only until then)
 
 ---
 
@@ -78,6 +78,7 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 | Date | What Was Done | Next Step |
 |------|---------------|-----------|
 | 2026-07-06 (S1) | Phase 0 activation. Sage completed CEO lane; Sophia built COO operational files, session records, lessons log, and this tracker + status board. First mini-project (Jot) logged — status SCOPING. | Await Jay's product-shape confirmation on Jot; resolve GitHub remote with Jay; write Session 1 close entry |
+| 2026-07-06 (S1) | Session close run. Step 0 sweep caught governance-doc staleness — fixed all three docs + 3 READMEs (Item 141). Session Summary + Index written; Gotcha Entry 1 logged; 2 items queued to Pending AAR; TLL Entry 1 logged. | Sage review of Session Summary; Steps 7–8 local commit + clean-tree check |
 
 ---
 
@@ -89,9 +90,12 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 
 **Scope:** Revamp the `board` repo (https://github.com/The-Coding-Trader/board — MIT, Go terminal kanban app) into a personal notes system for Jay. Keep its Markdown-file storage engine (atomic saves, live-reload, Claude co-edit); rebuild the UI from kanban cards to a notes experience.
 
+**Scope requirement — portability/sync:** Notes must be portable and synced across all of Jay's devices. Data stays as plain Markdown files in a synced vault folder. Pending Jay's answers: (a) the device list, and (b) the sync channel — cloud drive vs. private GitHub repo.
+
 ## Completed
 - [x] Repo evaluated — Rose fit report delivered    _Completed: 2026-07-06 (S1)_
 - [x] Repo security-cleared with conditions — Soren    _Completed: 2026-07-06 (S1)_
+- [x] `charm.land` dependency-domain typosquat concern (Rose) resolved — Soren verified it's Charmbracelet's official vanity import domain    _Completed: 2026-07-06 (S1)_
 
 ## In Progress
 - None — awaiting Jay's product-shape confirmation before any build begins.
@@ -105,7 +109,11 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 ## Open Gate Items — MUST clear before/at build time
 - [ ] **Security gate (Soren, condition 1):** run `go mod verify` + `govulncheck ./...` at build time, before first compile. Not yet due — fires when build starts.
 - [ ] **Security gate (Soren, condition 2):** any future upstream pull from `board` requires re-clearance by Soren. Standing condition for the life of the mini-project.
-- [ ] **Open question (Rose):** is `The-Coding-Trader` Jay's own GitHub account? Does not block — MIT settles legal either way. For the record.
+- [x] **CLOSED — Provenance (Rose open Q):** is `The-Coding-Trader` Jay's own GitHub account? **Settled 2026-07-06** — Jay confirmed it's a friend's account, freshly created, safe. Provenance closed. Soren's two build-time conditions stand unchanged.
+
+## Open Scope Questions — pending Jay's answers
+- [ ] **Device list** for portability/sync — which of Jay's devices the vault must reach.
+- [ ] **Sync channel** — cloud drive vs. private GitHub repo for the synced Markdown vault folder.
 
 ## Decisions Made
 | Date | Decision | Reason |
@@ -117,6 +125,7 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 | Date | What Was Done | Next Step |
 |------|---------------|-----------|
 | 2026-07-06 (S1) | Mini-project opened and logged. Rose fit report + Soren conditional clearance recorded. Both security conditions logged as open gate items. | Await Jay's product-shape confirmation |
+| 2026-07-06 (S1) | Provenance question CLOSED (Jay: friend's fresh account, safe). Added portability/sync scope requirement — Markdown vault, device list + sync channel pending Jay. | Await Jay's product-shape + device/sync answers |
 
 ---
-_Last updated: 2026-07-06 (Session 1)_
+_Last updated: 2026-07-06 (Session 1 — session close)_

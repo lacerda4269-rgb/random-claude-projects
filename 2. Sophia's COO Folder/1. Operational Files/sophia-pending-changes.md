@@ -45,7 +45,7 @@
 
 ---
 
-**Quick Stats:** `Active: 0 | Deferred Named: 0 | Deferred No Home: 0 | Notes & Objectives: 0 | Pending AAR: 0 | Behavioral Standards Active: 0 | Complete ✓ (pending transfer): 0`
+**Quick Stats:** `Active: 0 | Deferred Named: 0 | Deferred No Home: 0 | Notes & Objectives: 0 | Pending AAR: 2 | Behavioral Standards Active: 0 | Complete ✓ (pending transfer): 0`
 
 ---
 
@@ -93,8 +93,8 @@ True post-project items only. Applied after project closes at AAR.
 
 | # | Triage | Status | C&P | Source / Origin | Agent(s) Affected | Session Identified |
 |---|--------|--------|-----|-----------------|-------------------|--------------------|
-
-*No items yet.*
+| 1 | 9 (S1) | Pending AAR | Getting-Started.md Phase 0 lacks a governance-docs update step — add a Phase 0 action that triggers the Item 141 three-doc update (Reference, Tree, TreeView) whenever a folder is renamed or files are created. Source of Gotcha Entry 1. | MUIP source material (`Getting-Started.md`) | Sophia (owner); all | 1 |
+| 2 | 8 (S1) | Pending AAR | task-tracker blank template has no native multi-sub-project structure. For container-style projects, add a repeatable `## Mini-Project: [Name]` section pattern so each sub-project tracks cleanly. Adapted inline this session; formalize in the blank. | MUIP source material (`task-tracker (Blank Template).md`) | Sophia (owner); Cosmo (if built) | 1 |
 
 ---
 
@@ -109,6 +109,6 @@ Active behavioral standards currently being tracked — behaviors established op
 
 ---
 
-*Updated: Session 1 — 2026-07-06*
+*Updated: Session 1 — 2026-07-06 (2 items queued to Pending AAR at session close)*
 *Maintained by: Sophia*
 *Reports to: Sage*

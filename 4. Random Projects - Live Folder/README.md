@@ -1,4 +1,4 @@
-# 4. Named Project - Live Folder
+# 4. Random Projects - Live Folder
 
 **Owner:** Sage (CEO)
 **Purpose:** Isolated workspace for active project-specific working records — files that are live, being worked on, and don't belong in a standing agent's folder or the Master Library.

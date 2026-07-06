@@ -8,7 +8,7 @@
 **Philosophy:** Trust, but verify. Status reports — including this file — are inputs to independent verification, not substitutes for it. Approach agreements in good faith; confirm compliance independently. Collaboration and risk management run in parallel, not in trade-off. This is the standing operating principle behind why this file exists and how it is used.
 **Entry standard:** Type | Counter | Status | Session | What Happened | Root Cause | Fix Applied | Watch-Out Rule
 **Created:** Session 1 — 2026-07-06
-**Last Updated:** Session 1 — 2026-07-06
+**Last Updated:** Session 1 — 2026-07-06 (Entry 1 added at session close)
 
 ---
 
@@ -44,14 +44,26 @@
 
 | # | Session | Type | Counter | Status | Topic |
 |---|---------|------|---------|--------|-------|
-
-*No entries yet.*
+| 1 | 1 | Gap | 1 | Applied | Phase 0 folder rename/creation left the three governance docs stale |
 
 ---
 
 ## Entries
 
-*No entries yet. Log fills as the project runs.*
+### Entry 1 — Session 1
+
+**Type:** Gap
+**Counter:** 1
+**Status:** Applied
+**Session:** 1
+
+**What Happened:** Phase 0 activation renamed the Live Folder (`Named Project` → `Random Projects`) and created a full set of new files (root CLAUDE.md, CEO index/nav-map, filled soul, session records, COO operational files, TLL log, tracker + status board, `.claude/agents/sophia-coo.md`). The three Folder Governance docs — `Folder & File Reference.md`, `Folder & File Tree.md`, `Visual TreeView.md` — were not updated at the time and stayed in pristine MUIP-baseline form. The staleness was caught at the Step 0 pre-close sweep, not during the work that caused it.
+
+**Root Cause:** `Getting-Started.md`'s Phase 0 sequence has no explicit step to refresh the three governance docs after a structural change. The rename and file creation happened; nothing in the activation flow prompted the Item 141 three-doc update, so it was silently deferred to the close sweep.
+
+**Fix Applied:** All three governance docs updated together this session per Item 141 (Live Folder rename, Jot subfolder, and all Phase 0 files reflected). Process fix queued to Sophia's Pending Changes List for AAR: add a governance-docs update step to the Getting-Started Phase 0 sequence.
+
+**Watch-Out Rule:** Any folder rename or file creation — at Phase 0 or later — must trigger the Item 141 three-doc governance update in the same session as the change, not at the close sweep. Until Getting-Started codifies the step, treat it as a standing manual check at Phase 0 and confirm again at every Step 0 pre-close sweep.
 
 ---
 

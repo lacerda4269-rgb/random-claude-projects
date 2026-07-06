@@ -80,6 +80,13 @@
 | Task Tracker (master ToDo) | `4. Random Projects - Live Folder/task-tracker.md` | Canonical living tracker — all mini-projects |
 | Status Board | `4. Random Projects - Live Folder/status-board.md` | Status-story snapshot |
 
+## Jot — Personal Notes System (Mini-Project 1)
+
+| File | Path | Notes |
+|------|------|-------|
+| Rose research report (board repo) | `4. Random Projects - Live Folder/Jot - Personal Notes System/rose-research-report-board-repo.md` | Fit assessment; provenance resolved in-file |
+| Soren security clearance (board repo) | `4. Random Projects - Live Folder/Jot - Personal Notes System/soren-security-clearance-board-repo.md` | CLEARED WITH CONDITIONS — 2 build-time gates |
+
 ---
 
 ## Live Work

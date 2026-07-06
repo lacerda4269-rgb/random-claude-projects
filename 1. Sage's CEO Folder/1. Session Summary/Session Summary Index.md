@@ -24,5 +24,6 @@
 
 | Entry | Date | File | Key Topics |
 |---|---|---|---|
+| Session 1 | 2026-07-06 | Session Summary.md | Phase 0 activation complete (CEO + COO lanes), container model set, Jot mini-project scoped (Rose fit report, Soren cleared with conditions, provenance resolved, portability requirement), governance-docs staleness caught and fixed, first full session close |
 
-*Index fills as sessions run. First entry written at Session 1 close.*
+*Index fills as sessions run.*

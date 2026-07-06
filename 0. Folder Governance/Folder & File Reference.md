@@ -1,25 +1,39 @@
 # Folder & File Reference
 
 **Version:** 0
-**Status:** Master Universal Initial Package (MUIP) — baseline template for all new projects
-**Last Updated:** 2026-06-23 — Sterilization pass (Change Log row 43 — ML root section reconciled to disk, two phantom entries deleted, Sophia mermaid filename fixed, leftover live-body `99.` swept to `6.`)
+**Status:** ACTIVE PROJECT INSTANCE — Random Projects (activated Session 1, 2026-07-06). Live instance of the MUIP baseline; structural deltas from baseline are recorded in the activation section and change log below.
+**Last Updated:** 2026-07-06 — Session 1 activation reflect (Item 141: Live Folder renamed to Random Projects, Jot subfolder added, Phase 0 files created — all three governance docs updated together).
 **Owner:** Sophia (COO)
 
 ---
 
-> This document is the team's written reference for every folder and file in the Master Universal Initial Package (MUIP).
-> Jay's visual companion lives alongside this file in `0. Folder Governance`.
-> This is the blank baseline — no project-specific content lives here.
-> Both documents update together whenever the version structure changes.
+> This document is the team's written reference for every folder and file — updated to reflect the live Random Projects instance.
+> Jay's visual companions (`Visual TreeView.md`, `Folder & File Tree.md`) live alongside this file in `0. Folder Governance` and update together with it (Item 141).
+> The unchanged sections below still describe the MUIP baseline structure this project inherited; the activation section records what Phase 0 (Session 1) filled or renamed.
 
 ---
 
 ## Change Log
 
-> This table is empty at baseline. Changes are logged here when the version itself is updated — not per project. Per-project structural changes live in the active version's F&F.
-
 | # | Original Name / Location | New Name / Location | What Needs Updating | Ripple Est. |
 |---|--------------------------|---------------------|---------------------|-------------|
+| S1-1 | `4. Named Project - Live Folder/` | `4. Random Projects - Live Folder/` | All three governance docs, root README, Live Folder README, Project Artifacts README | Done S1 |
+| S1-2 | *(new)* | `4. Random Projects - Live Folder/Jot - Personal Notes System/` | Tree + TreeView | Done S1 |
+
+---
+
+## Project Activation State — Session 1 (2026-07-06)
+
+Files created or filled at Phase 0 activation (deltas from the empty MUIP baseline):
+
+- **Root:** `CLAUDE.md` created (project auto-loader).
+- **`1. Sage's CEO Folder/`** root: `project-file-index.md`, `project-navigation-map.md` created.
+- **`0. Sage's CEO Project Soul/`**: `Sage-project-soul.md` filled.
+- **`1. Session Summary/`**: `Session Summary.md`, `Session Summary Index.md` created.
+- **`2. Sophia's COO Folder/1. Operational Files/`**: `Gotcha.md`, `Project Resources Log.md`, `sophia-pending-changes.md`, `sophia-completed-changes.md` created.
+- **`3. Teams Lesson Log - TLL/`**: `Team-Lessons-Log.md` created.
+- **`.claude/agents/`**: `sophia-coo.md` wired (live COO copy).
+- **`4. Random Projects - Live Folder/`**: renamed from `Named Project`; `task-tracker.md`, `status-board.md` created; `Jot - Personal Notes System/` subfolder created (first mini-project).
 
 ---
 
@@ -250,18 +264,20 @@ The full per-agent file listing now lives under `5. Master Library/1. Soul Folde
 
 ---
 
-### `4. Named Project - Live Folder/`
+### `4. Random Projects - Live Folder/`
 
-**Purpose:** Project-specific workspace for active operational records and working documents — items belonging to this project specifically and not template material. Replace "Named Project" with the actual project name at Phase 0.
-**Baseline state:** Empty beyond README. The Live Folder is project-specific — it populates during the project, then starts empty again for the next project. P/M Lead folders (if applicable) are created at the top level alongside the CEO and COO folders, not inside the Live Folder.
-**Renamed (Session 265):** `6. Named Project - WorkTree/` → `4. Named Project - Live Folder/` (git "WorkTree" metaphor dropped).
+**Purpose:** Project-specific workspace for active operational records and working documents — items belonging to this project specifically and not template material. **Renamed from `4. Named Project - Live Folder/` at Phase 0 (Session 1).**
+**Current state (Session 1):** Active. Holds the container's canonical `task-tracker.md` and `status-board.md`, plus one per-mini-project subfolder. Each mini-project Jay brings gets its own subfolder here.
+**Renamed (Session 265, baseline):** `6. Named Project - WorkTree/` → `4. Named Project - Live Folder/` (git "WorkTree" metaphor dropped); renamed again to `Random Projects` at this project's Phase 0.
 **On-demand Shared/Cross-Agent layer:** the cross-agent handoff subfolder is created here on first need (see this folder's README).
 **Owner:** Sage (CEO); agents contribute as directed.
 
 | File / Subfolder | Description |
 |------------------|-------------|
-| `README.md` | Folder purpose, governance, and the on-demand Shared/Cross-Agent section. Pre-loaded. |
-| *(empty at baseline — populated per project)* | Active project operational records and working documents |
+| `README.md` | Folder purpose, governance, and the on-demand Shared/Cross-Agent section. |
+| `task-tracker.md` | Canonical living task tracker for the container (created Session 1). |
+| `status-board.md` | Snapshot status board for the container (created Session 1). |
+| `Jot - Personal Notes System/` | First mini-project subfolder (created Session 1). Scope: revamp the `board` repo into a personal notes system. Status: SCOPING. |
 
 ---
 

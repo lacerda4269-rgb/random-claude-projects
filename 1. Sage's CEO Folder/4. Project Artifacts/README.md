@@ -16,7 +16,7 @@ Project Artifacts is the holding area for significant outputs produced during th
 - Any CEO-layer deliverable with multi-session relevance
 
 **What does NOT go here:**
-- **The project's actual product/deliverables** (code, strategies, build output) — those live in `4. Named Project - Live Folder/`. This is the key line: the Live Folder holds *what the project builds*; Project Artifacts holds CEO-layer records *about running* the project. The product goes to the Live Folder, not here.
+- **The project's actual product/deliverables** (code, strategies, build output) — those live in `4. Random Projects - Live Folder/`. This is the key line: the Live Folder holds *what the project builds*; Project Artifacts holds CEO-layer records *about running* the project. The product goes to the Live Folder, not here.
 - Agent work products — those stay in the agent's folder or their designated output path
 - Session notes — those go in the Session Summary
 - Research reports — those go through the ML pipeline to `5. Master Library/`

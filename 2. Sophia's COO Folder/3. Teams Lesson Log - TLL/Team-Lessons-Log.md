@@ -50,8 +50,9 @@ This is not a blame log. It is not a policy document. It is an honest record of 
 
 | # | Session | Date | Agent | Topic (brief) | Promotion Status |
 |---|---------|------|-------|---------------|-----------------|
-
-*No entries yet.*
+| 1 | 1 | 2026-07-06 | Sophia | Template→live instances don't self-rebase — governance/meta docs must be flipped at Phase 0 | AAR — pending review |
+| 2 | 1 | 2026-07-06 | Soren | A read-only web repo clearance can't run the automated CVE scan — deliver as CLEARED WITH CONDITIONS, carry the scan as a build-time gate | AAR — pending review |
+| 3 | 1 | 2026-07-06 | Rose | Flag operator-owned/adjacent repo provenance as an early question for Jay — a cheap human confirm collapses a whole licensing branch | AAR — pending review |
 
 ---
 
@@ -76,7 +77,52 @@ This is not a blame log. It is not a policy document. It is an honest record of 
 
 ## Log
 
-*No entries yet. Log fills as the project runs.*
+## Entry 1 — Session 1 — 2026-07-06 — Sophia
+
+**What happened:** At Phase 0 activation, the empty folders got filled correctly, but the documents that *describe* the structure — the three governance docs and the root README — silently kept their MUIP "baseline template / no project-specific content" framing, which now directly contradicted the live Random Projects reality. The gap wasn't visible because the folders looked done; only the meta-docs still read as a blank template. Caught at the Step 0 pre-close sweep.
+
+**Why it happened:** Instantiating a template package (MUIP → live project) fills structure but does not re-base identity. Nothing in the activation flow flips a doc's self-description from "template" to "instance," so the descriptive/reference layer lags the physical one.
+
+**Recurrence:** First occurrence.
+
+**Rule going forward:** At Phase 0, treat every inherited "baseline/template" status line and self-description as a re-base target — not just the empty folders. The folders get filled; the docs that describe the structure must have their identity flipped from template to live instance in the same pass. Applies to any future template-instantiated project, not just this one.
+
+**Promotion status:** AAR — pending review (paired with Pending Changes AAR item 1: add a governance-docs update step to Getting-Started Phase 0).
+**Promotion destination:** Pending — candidate for `Getting-Started.md` Phase 0 sequence and/or `lessons_global.md`.
+
+---
+
+## Entry 2 — Session 1 — 2026-07-06 — Soren (security domain)
+
+**What happened:** Soren cleared the `board` repo for the Jot mini-project via a read-only web review (manual source read + provenance via api.github.com and raw.githubusercontent.com). That path could fully cover the source review but structurally could not run the automated CVE/dependency scan, which needs a local clone.
+
+**Why it happened:** A web-only clearance and a local automated scan are two halves of one clearance, not substitutes. Treating the web review as complete would have shipped an unscanned dependency tree into the build.
+
+**Recurrence:** First occurrence.
+
+**Rule going forward (verbatim):** "A read-only web clearance of a GitHub repo can fully cover manual source review and provenance (via api.github.com + raw.githubusercontent.com), but it structurally cannot run the automated CVE/dependency scan — that needs a local clone. Don't treat a web review as a complete clearance. Deliver it as CLEARED WITH CONDITIONS and carry the automated scan forward as an explicit build-time gate. The web review and the local scan are two halves of one clearance, not substitutes for each other."
+
+**Promotion status:** AAR — pending review.
+**Promotion destination:** Pending — candidate for Soren's soul / security SOP.
+
+---
+
+## Entry 3 — Session 1 — 2026-07-06 — Rose (research domain)
+
+**What happened:** Rose's fit report on the `board` repo flagged provenance (is The-Coding-Trader Jay's own account?) as an open question rather than vetting it as an unknown third party. A one-line human confirm from Jay (a friend's account; MIT settles legal either way) collapsed the entire licensing/provenance branch.
+
+**Why it happened:** Vetting operator-adjacent provenance as if it were an anonymous third party burns research effort that a cheap early question to Jay can eliminate.
+
+**Recurrence:** First occurrence.
+
+**Rule going forward (verbatim):** "When research surfaces a repo that may be operator-owned or operator-adjacent, flag provenance as an explicit question for Jay early rather than vetting it as an unknown third party — a cheap human confirm can collapse an entire branch of licensing/provenance work, as it did here."
+
+**Promotion status:** AAR — pending review (Rose suggested lightweight weight; Sage's call).
+**Promotion destination:** Pending — candidate for Rose's soul / research SOP.
+
+---
+
+*All three Active Agents Check respondents logged by name (Sophia, Soren, Rose). Soren additionally verified `charm.land` is Charmbracelet's official vanity import domain, closing Rose's typosquat concern — handoff completed, recorded in the Session 1 Summary reconciliation note.*
 
 ---
 

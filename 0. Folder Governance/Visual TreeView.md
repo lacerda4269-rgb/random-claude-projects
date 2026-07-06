@@ -1,7 +1,7 @@
 # Visual TreeView — Master Universal Initial Package (MUIP)
 
-**Status:** Living Document — updates with Folder & File Reference and Folder & File Tree
-**Last Updated:** 2026-06-20 — Session 265 (P7 end-pass — regenerated against fresh disk; `.claude/` config branch added to the map — Jay review catch, relevant to Item 152 placement)
+**Status:** Living Document — ACTIVE PROJECT INSTANCE (Random Projects). Updates with Folder & File Reference and Folder & File Tree (Item 141).
+**Last Updated:** 2026-07-06 — Session 1 activation reflect (Live Folder renamed to Random Projects + Jot subfolder; Sophia wired to `.claude/agents/`).
 **Owner:** Sophia (COO)
 
 ---
@@ -24,14 +24,14 @@ graph LR
     v01b --> CEO["1. Sage's CEO Folder/"]
     v01b --> COO["2. Sophia's COO Folder/"]
     v01b --> PO1["3. Phase 0 & 1/ — empty at baseline"]
-    v01b --> LIVE["4. Named Project - Live Folder/ — empty at baseline"]
+    v01b --> LIVE["4. Random Projects - Live Folder/ — active (task-tracker, status-board, Jot mini-project)"]
     v01b --> ML["5. Master Library/"]
     v01b --> BT["6. Blank Universal Templates/"]
     v01b --> GS["Getting-Started.md"]
     v01b --> RM["README.md"]
 
     %% .claude (Claude Code config — travels with the package)
-    DOTCLAUDE --> DC_AGENTS["agents/ — Sophia wired here at Phase 0 (others on-demand)"]
+    DOTCLAUDE --> DC_AGENTS["agents/ — sophia-coo.md wired Session 1 (others on-demand)"]
     DOTCLAUDE --> DC_CMD["commands/ — caveman, cohk, surface-transition, validate-pending-list, version-check"]
     DOTCLAUDE --> DC_HOOKS["hooks/ — pre-commit, quick-stats, session-stop, version-gate"]
     DOTCLAUDE --> DC_SKILLS["skills/ — empty at baseline (global skills live in ~/.claude; see Item 152)"]
@@ -92,7 +92,7 @@ graph LR
 | `1. Sage's CEO Folder/` | Master Guides, SOPs (+ pair-named Mermaids), soul/session/artifacts subfolders | Soul + session records filled |
 | `2. Sophia's COO Folder/` | COO Suite (sophia-coo.md, SOPs, List-Management Mermaid), TLL, operational/AAR shells | Operational files deployed; Sophia wired to `.claude/agents/` |
 | `3. Phase 0 & 1/` | README only — empty at baseline | Populated as Phase 0/1 produce records |
-| `4. Named Project - Live Folder/` | README only — empty at baseline | Renamed `[Project] - Live Folder`; active work lands here |
+| `4. Random Projects - Live Folder/` | Active — task-tracker, status-board, and the Jot mini-project subfolder | Renamed at Session 1; active work lands here |
 | `5. Master Library/` | ML Operations, flat 9-agent Soul Folder, agent descriptions, Research Reports | On-demand agent pulls; resources cataloged |
 | `6. Blank Universal Templates/` | 24 blank templates + README | Templates pulled and deployed |
 

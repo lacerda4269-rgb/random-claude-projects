@@ -18,7 +18,7 @@
 
 | # | Resource Name | Type | Source | Status | Assigned Agents | Notes |
 |---|---------------|------|--------|--------|-----------------|-------|
-| 1 | `board` repo (The-Coding-Trader/board) | External repo (Go, MIT) — candidate base for Jot | Evaluated by Rose | On hold — evaluated + security-cleared with conditions, NOT yet acquired/forked | Rose (eval), Soren (security) | Mini-project: Jot — Personal Notes System. Rose fit report 2026-07-06: good skeleton, notes UX net-new. Soren cleared WITH CONDITIONS: (1) `go mod verify` + `govulncheck ./...` at build time before first compile; (2) any future upstream pull requires re-clearance. Rose open Q: is The-Coding-Trader Jay's own account? (non-blocking). |
+| 1 | `board` repo (The-Coding-Trader/board) | External repo (Go, MIT) — candidate base for Jot | Evaluated by Rose | On hold — evaluated + security-cleared with conditions, NOT yet acquired/forked | Rose (eval), Soren (security) | Mini-project: Jot — Personal Notes System. Rose fit report 2026-07-06: good skeleton, notes UX net-new. Soren cleared WITH CONDITIONS: (1) `go mod verify` + `govulncheck ./...` at build time before first compile; (2) any future upstream pull requires re-clearance. Provenance: settled 2026-07-06 — Jay confirmed friend's freshly-created account, safe. |
 
 *Lightweight standing container — resources logged per mini-project as they are assigned or built.*
 

@@ -1,13 +1,13 @@
 # Folder & File Tree
 
 **Version:** 0
-**Status:** Living Document — updates with Folder & File Reference and Visual TreeView
-**Last Updated:** 2026-06-23 — Sterilization pass (re-rooted to canonical package name; regenerated against fresh disk; phantom rows removed; description count corrected to 11)
+**Status:** Living Document — ACTIVE PROJECT INSTANCE (Random Projects). Updates with Folder & File Reference and Visual TreeView (Item 141).
+**Last Updated:** 2026-07-06 — Session 1 activation reflect (Live Folder renamed to Random Projects, Jot subfolder added, Phase 0 files shown in tree).
 **Owner:** Sophia (COO)
 
 ---
 
-> This is the literal nested text tree of every folder and file in the Master Universal Initial Package at current (final, sterilized) state.
+> This is the literal nested text tree of every folder and file — updated to the live Random Projects instance at Session 1 state.
 > Updated whenever Folder & File Reference.md and Visual TreeView.md are updated.
 > Read alongside `Folder & File Reference.md` for purpose and decision context.
 > Read alongside `Visual TreeView.md` for the graphical view.
@@ -17,13 +17,15 @@
 ---
 
 ```
-Master Universal Initial Package/
+Random Projects/   (live instance of the MUIP — activated Session 1, 2026-07-06)
 ├── README.md
+├── CLAUDE.md                            (project auto-loader — created Session 1)
 ├── Getting-Started.md
 ├── .mcp.json
 ├── .claude/
 │   ├── MANIFEST.md
-│   ├── agents/                          (empty at baseline — Sophia SOT copy added at Phase 0)
+│   ├── agents/
+│   │   └── sophia-coo.md                (live COO copy — wired Session 1)
 │   ├── commands/
 │   │   ├── caveman.md
 │   │   ├── cohk.md
@@ -45,12 +47,16 @@ Master Universal Initial Package/
 │
 ├── 1. Sage's CEO Folder/
 │   ├── README.md
+│   ├── project-file-index.md            (created Session 1)
+│   ├── project-navigation-map.md        (created Session 1)
 │   ├── 0. Sage's CEO Project Soul/
 │   │   ├── README.md
 │   │   ├── ME - Jay.md
-│   │   └── Sage-project-soul.md
+│   │   └── Sage-project-soul.md          (filled Session 1)
 │   ├── 1. Session Summary/
-│   │   └── README.md
+│   │   ├── README.md
+│   │   ├── Session Summary.md            (created Session 1)
+│   │   └── Session Summary Index.md      (created Session 1)
 │   ├── 2. Master Guides/
 │   │   ├── README.md
 │   │   ├── Hard Rules — Master List.md
@@ -93,18 +99,26 @@ Master Universal Initial Package/
 │   │   ├── internal-build-record.md
 │   │   └── internal-build-record-Jay.md
 │   ├── 1. Operational Files/
-│   │   └── README.md
+│   │   ├── README.md
+│   │   ├── Gotcha.md                     (created Session 1)
+│   │   ├── Project Resources Log.md      (created Session 1)
+│   │   ├── sophia-pending-changes.md     (created Session 1)
+│   │   └── sophia-completed-changes.md   (created Session 1)
 │   ├── 2. AAR/
 │   │   └── README.md
 │   └── 3. Teams Lesson Log - TLL/
 │       ├── README.md
+│       ├── Team-Lessons-Log.md           (created Session 1)
 │       └── Lessons-Gotcha-Routing-Mermaid.md
 │
 ├── 3. Phase 0 & 1/
 │   └── README.md
 │
-├── 4. Named Project - Live Folder/
-│   └── README.md
+├── 4. Random Projects - Live Folder/    (renamed from "Named Project" — Session 1)
+│   ├── README.md
+│   ├── task-tracker.md                  (created Session 1)
+│   ├── status-board.md                  (created Session 1)
+│   └── Jot - Personal Notes System/     (first mini-project — created Session 1)
 │
 ├── 5. Master Library/
 │   ├── README.md
@@ -241,3 +255,4 @@ Master Universal Initial Package/
 
 | Version | Date | Change |
 |---------|------|--------|
+| 0 (instance) | 2026-07-06 | Session 1 activation reflect: Live Folder renamed to Random Projects; Jot subfolder + task-tracker + status-board added; root CLAUDE.md, CEO index/nav-map, filled soul, session records, operational files, TLL log, and `.claude/agents/sophia-coo.md` shown in tree. Updated with Reference + TreeView (Item 141). |

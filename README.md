@@ -1,11 +1,13 @@
 # Master Universal Initial Package (MUIP)
 
-**Status:** Baseline template — clean and ready
+**Status:** ACTIVE — Random Projects container (activated 2026-07-06, Session 1). No longer the baseline blank; this is a live instance of the MUIP.
 **Owner:** Sage (CEO)
 
 ---
 
 ## What This Is
+
+> **Activated-instance note (2026-07-06, Session 1):** The two sections below are MUIP-heritage reference — they describe the *source template* this project was copied from. This copy is no longer that blank: it is the live **Random Projects container**. For current project state, read `CLAUDE.md` (root) and `Sage-project-soul.md`.
 
 This is the Master Initial Package in its starting state — the clean template. When you begin a new project, you start from this blank. Phase 0 activates the structure, fills the templates, and stands the project up.
 
@@ -32,7 +34,7 @@ Nothing in here is project-specific. It is the package before any project touche
 | `1. Sage's CEO Folder/` | Pre-loaded governance: Master Guides, SOPs |
 | `2. Sophia's COO Folder/` | Sophia's identity files; operational files deployed at Phase 0 |
 | `3. Phase 0 & 1/` | Phase kickoff materials (empty at baseline) |
-| `4. Named Project - Live Folder/` | Empty at baseline; rename at Phase 0 |
+| `4. Random Projects - Live Folder/` | Active workspace — holds per-mini-project subfolders (e.g., Jot) plus task-tracker and status-board |
 | `5. Master Library/` | Pre-loaded library — cleared resources and the flat agent Soul Folder (all 9 agents) |
 | `6. Blank Universal Templates/` | Every blank template, organized and ready |
 | `Getting-Started.md` | **Start here.** Phase 0 activation sequence. |
