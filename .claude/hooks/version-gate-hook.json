@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"\nimport sys, json, re, subprocess\n\ntry:\n    data = json.load(sys.stdin)\nexcept:\n    sys.exit(0)\n\ncommand = data.get('tool_input', {}).get('command', '')\nif 'git commit' not in command:\n    sys.exit(0)\n\ntry:\n    result = subprocess.run(\n        ['git', 'diff', '--cached', '--name-only'],\n        capture_output=True, text=True, timeout=10\n    )\n    staged_files = result.stdout.strip().splitlines()\nexcept:\n    sys.exit(0)\n\nmd_files = [f for f in staged_files if f.endswith('.md')]\nif not md_files:\n    sys.exit(0)\n\nversion_header_re = re.compile(r'^\\*\\*Version:\\*\\*\\s*(.+)', re.MULTILINE)\ntable_row_re = re.compile(r'^\\|\\s*(?:SOP\\s+|v)?([0-9]+\\.[0-9]+(?:\\.[0-9]+)?)\\s*\\|', re.MULTILINE)\nchangelog_re = re.compile(r'^\\*v?([0-9]+\\.[0-9]+(?:\\.[0-9]+)?)\\b', re.MULTILINE)\n\ndef extract_numeric(raw):\n    raw = raw.strip()\n    raw = re.sub(r'^(SOP\\s+|v|V)', '', raw)\n    m = re.match(r'^([0-9]+\\.[0-9]+(?:\\.[0-9]+)?)', raw)\n    return m.group(1) if m else None\n\ndef vtuple(v):\n    try:\n        return tuple(int(x) for x in v.split('.'))\n    except:\n        return (0,)\n\nerrors = []\n\nfor rel_path in md_files:\n    try:\n        with open(rel_path, 'r', encoding='utf-8', errors='replace') as f:\n            content = f.read()\n    except:\n        continue\n\n    header_match = version_header_re.search(content)\n    if not header_match:\n        continue\n\n    header_version = extract_numeric(header_match.group(1))\n    if not header_version:\n        continue\n\n    log_versions = table_row_re.findall(content) + changelog_re.findall(content)\n    if not log_versions:\n        continue\n\n    highest = max(log_versions, key=vtuple)\n\n    if vtuple(header_version) != vtuple(highest):\n        errors.append((rel_path, header_version, highest))\n\nif errors:\n    print('')\n    print('VERSION GATE -- COMMIT BLOCKED')\n    print('Global Lesson 38: Version header must match highest log entry.')\n    print('')\n    for path, header, log in errors:\n        print('  FILE:    ' + path)\n        print('  HEADER:  **Version:** ' + header)\n        print('  LOG MAX: ' + log)\n        print('  FIX:     Update **Version:** header to ' + log + ', or add a log entry for ' + header)\n        print('')\n    sys.exit(1)\n\nsys.exit(0)\n\""
+          }
+        ]
+      }
+    ]
+  }
+}

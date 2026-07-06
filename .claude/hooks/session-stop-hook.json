@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '\n╔══════════════════════════════════════════════════════════════════╗\n║  SESSION STOP — SAGE: WHICH TYPE OF STOP IS THIS?               ║\n╚══════════════════════════════════════════════════════════════════╝\n\n  c = SESSION CLOSE (not returning this session)\n  k = COMPACT WRAP-UP (compacting and returning)\n\n──────────────────────────────────────────────────────────────────\nSESSION CLOSE CHECKLIST (c)\n──────────────────────────────────────────────────────────────────\n\n  [ ] Item 74 — Cross-reference + backward sweep done?\n      All project file references point to valid current targets.\n      Reverse direction: all targets match what points to them.\n      PAIRED OPERATION — neither runs without the other.\n      Source: Item 74 | Master Guide Section 6 | Gotcha Entry 13\n\n  [ ] Session Summary updated and current this session?\n\n  [ ] No agents mid-task? (HR — close blocked if agents are active)\n\n  [ ] Sophia'"'"'s pending list: no backed-up transfers?\n\n  [ ] PPN/HK pushed to GitHub?\n\n  [ ] Work queue updated (Item 151 status current)?\n\n  Hooks 5, 6, 7 run automatically on git commit.\n\n──────────────────────────────────────────────────────────────────\nCOMPACT WRAP-UP CHECKLIST (k)\n──────────────────────────────────────────────────────────────────\n\n  [ ] All current work files saved and staged?\n\n  [ ] Session Summary CP entry written (Compact-Wrap-Up-SOP)?\n\n  [ ] Active agents resolved or handed off before compact?\n\n  [ ] REMINDER: On return — read most recent CP section in\n      Session Summary before continuing (CLAUDE.md post-compact\n      protocol). Do NOT run full session start sequence.\n\n──────────────────────────────────────────────────────────────────\n'"
+          }
+        ]
+      }
+    ]
+  }
+}

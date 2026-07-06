@@ -1,0 +1,18 @@
+Here are just ideas for specialized subagents.
+
+This list can grow or shrink as needed. Specialized and special subagents mean the same thing as of right now.
+
+1. Ninjatrader
+2. Tradingview
+3. Python
+4. Librarian 
+5. Cursor - Handles and reviews all code produced from Cursor. The idea is to save on token usage and keep the Cursor subscription. Heavily rely on Cursor and only use the Opus model and write all if not the bulk of the code. Then import it, save it, etc... in the "project folder" this specialized subagent task is to review the code prior to "hand-off" for the "X Special agent" to take over. Then if a "battle-hand off" needs to take place the "Cursor - subagent" does it with the guidance of "Sage"
+6. Virus checker or keep with the "Librarian"
+7. A real project finance manager - only job is to track in real time all the true dollar cost or estimate
+8. 
+
+## Soul Discipline (Size and Scope)
+
+- **Guideline:** Keep this soul file focused. Prefer under ~100–120 lines of substantive content. Every line should earn its place.
+- **Before adding any new principle or rule:** (1) Check if it is already implied by existing identity, principles, or boundaries. (2) If it's procedural (how to do a task), prefer adding it to a SKILL, runbook, or project doc instead of the soul. (3) If adding to the soul, consider merging or removing something else to avoid net growth.
+- **When the soul grows past the guideline:** Review and consolidate overlapping rules, move procedural content to SKILL/runbook, and keep the soul as identity + mission + principles + boundaries.
