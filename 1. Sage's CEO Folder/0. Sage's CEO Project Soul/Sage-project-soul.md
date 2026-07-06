@@ -47,7 +47,7 @@ A standing container for multiple small, unrelated mini-projects. Success = each
 - Build order: Soul → Skills → Hooks → CLIs → MCPs → Plugins. Always. No exceptions.
 - Personal notes folder: **none identified at Phase 0** (Jay's Project Office is his input zone, not personal notes — team may read it).
 - PowerShell is blocked by Bitdefender on this machine — Bash tool only (global charter constraint).
-- GitHub remote not yet created — local git only until Jay creates/links the repo. (Open question 5.2.)
+- GitHub remote: `origin` → `https://github.com/lacerda4269-rgb/random-claude-projects.git` (linked at Session 1 close). Push at every session close per SOP Step 7.
 
 ---
 
@@ -162,7 +162,8 @@ N/A — internal logic only. All communication is between Jay, Sage, and the age
 
 ### 5.2 Open Questions
 
-- [ ] GitHub repository — not yet created for this project. Local git initialized at Phase 0; Jay to create/link the remote when ready.
+- [x] GitHub repository — RESOLVED Session 1 close: Jay created `https://github.com/lacerda4269-rgb/random-claude-projects.git`; remote linked and all Session 1 commits pushed.
+- [ ] Jot notes-system shape — device list + sync channel (Jay thinking it over).
 
 ---
 

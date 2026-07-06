@@ -70,7 +70,7 @@ Where we are right now. Updated at session start review and after major phase tr
 | Involvement score | 0–1 (full auto; Jay brings direction) |
 | Active mini-projects | Jot — Personal Notes System (SCOPING; awaiting Jay: device list + sync channel) |
 | Jot security gates | Soren CLEARED WITH CONDITIONS — `go mod verify` + `govulncheck` before first build; re-clear any upstream pull |
-| GitHub remote | Not created — local git only (open question in project soul) |
+| GitHub remote | LIVE — `lacerda4269-rgb/random-claude-projects` linked at Session 1 close; all commits pushed |
 
 ---
 
