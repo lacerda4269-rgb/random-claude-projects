@@ -10,7 +10,7 @@
 
 > *One-line project state. What phase are we in? What is the active focus?*
 
-Phase 0 activation nearly complete. The Random Projects container is built and standing by — ready to receive its first mini-project. Full auto mode (involvement 0–1).
+Container live. First mini-project **Jot — Personal Notes System** is open and in SCOPING — awaiting Jay's product-shape confirmation before any build. Full auto mode (involvement 0–1).
 
 ---
 
@@ -18,6 +18,7 @@ Phase 0 activation nearly complete. The Random Projects container is built and s
 
 *What is actively being worked on right now.*
 
+- **Jot — Personal Notes System** (SCOPING): `board` repo evaluated (Rose) and security-cleared with conditions (Soren). Awaiting Jay's product-shape confirmation before build. Two Soren security gates logged as open items for build time.
 - Phase 0 close-out — COO reporting final activation status back to Sage.
 
 ---

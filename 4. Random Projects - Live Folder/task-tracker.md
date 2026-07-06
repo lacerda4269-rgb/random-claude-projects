@@ -77,7 +77,46 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 
 | Date | What Was Done | Next Step |
 |------|---------------|-----------|
-| 2026-07-06 (S1) | Phase 0 activation. Sage completed CEO lane; Sophia built COO operational files, session records, lessons log, and this tracker + status board. | Await first mini-project; resolve GitHub remote with Jay; write Session 1 close entry |
+| 2026-07-06 (S1) | Phase 0 activation. Sage completed CEO lane; Sophia built COO operational files, session records, lessons log, and this tracker + status board. First mini-project (Jot) logged — status SCOPING. | Await Jay's product-shape confirmation on Jot; resolve GitHub remote with Jay; write Session 1 close entry |
+
+---
+
+# Mini-Project: Jot — Personal Notes System
+
+**Subfolder:** `4. Random Projects - Live Folder/Jot - Personal Notes System/`
+**Status:** SCOPING — awaiting Jay's confirmation on product shape before any build. No build work started.
+**Logged:** 2026-07-06 (Session 1)
+
+**Scope:** Revamp the `board` repo (https://github.com/The-Coding-Trader/board — MIT, Go terminal kanban app) into a personal notes system for Jay. Keep its Markdown-file storage engine (atomic saves, live-reload, Claude co-edit); rebuild the UI from kanban cards to a notes experience.
+
+## Completed
+- [x] Repo evaluated — Rose fit report delivered    _Completed: 2026-07-06 (S1)_
+- [x] Repo security-cleared with conditions — Soren    _Completed: 2026-07-06 (S1)_
+
+## In Progress
+- None — awaiting Jay's product-shape confirmation before any build begins.
+
+## Up Next
+- [ ] Jay confirms product shape / notes UX direction (gate before build)
+
+## Blocked / On Hold
+- None.
+
+## Open Gate Items — MUST clear before/at build time
+- [ ] **Security gate (Soren, condition 1):** run `go mod verify` + `govulncheck ./...` at build time, before first compile. Not yet due — fires when build starts.
+- [ ] **Security gate (Soren, condition 2):** any future upstream pull from `board` requires re-clearance by Soren. Standing condition for the life of the mini-project.
+- [ ] **Open question (Rose):** is `The-Coding-Trader` Jay's own GitHub account? Does not block — MIT settles legal either way. For the record.
+
+## Decisions Made
+| Date | Decision | Reason |
+|------|----------|--------|
+| 2026-07-06 | Base Jot on the `board` repo | Rose verdict: good skeleton; Markdown storage engine reusable, notes UX is net-new |
+| 2026-07-06 | Hold all build work until Jay confirms product shape | Scoping gate — no build on unconfirmed direction |
+
+## Session Log
+| Date | What Was Done | Next Step |
+|------|---------------|-----------|
+| 2026-07-06 (S1) | Mini-project opened and logged. Rose fit report + Soren conditional clearance recorded. Both security conditions logged as open gate items. | Await Jay's product-shape confirmation |
 
 ---
 _Last updated: 2026-07-06 (Session 1)_
