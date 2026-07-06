@@ -19,6 +19,8 @@
 |---|--------------------------|---------------------|---------------------|-------------|
 | S1-1 | `4. Named Project - Live Folder/` | `4. Random Projects - Live Folder/` | All three governance docs, root README, Live Folder README, Project Artifacts README | Done S1 |
 | S1-2 | *(new)* | `4. Random Projects - Live Folder/Jot - Personal Notes System/` | Tree + TreeView | Done S1 |
+| S2-1 | *(new files)* | Jot subfolder: `rose-research-report-board-repo.md`, `soren-security-clearance-board-repo.md` (S1), `jot-brainstorm-notes.md` (S2) | Tree + Reference | Done S2 |
+| S2-2 | *(new, operator-created)* | `4. Random Projects - Live Folder/Screenshots/` | Tree + TreeView + Reference; git handling pending Jay | Done S2 (docs) |
 
 ---
 
@@ -277,7 +279,8 @@ The full per-agent file listing now lives under `5. Master Library/1. Soul Folde
 | `README.md` | Folder purpose, governance, and the on-demand Shared/Cross-Agent section. |
 | `task-tracker.md` | Canonical living task tracker for the container (created Session 1). |
 | `status-board.md` | Snapshot status board for the container (created Session 1). |
-| `Jot - Personal Notes System/` | First mini-project subfolder (created Session 1). Scope: revamp the `board` repo into a personal notes system. Status: SCOPING. |
+| `Jot - Personal Notes System/` | First mini-project subfolder (created Session 1). Scope: revamp the `board` repo into a personal notes system. Status: BRAINSTORMING (Session 2). Holds Rose's fit report, Soren's clearance, and the living brainstorm notes. |
+| `Screenshots/` | Operator-created folder (noticed Session 2). Contents unreviewed by the team; kept OUT of git pending Jay's answer on purpose + whether it syncs to GitHub. |
 
 ---
 

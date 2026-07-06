@@ -1,7 +1,7 @@
 # Visual TreeView — Master Universal Initial Package (MUIP)
 
 **Status:** Living Document — ACTIVE PROJECT INSTANCE (Random Projects). Updates with Folder & File Reference and Folder & File Tree (Item 141).
-**Last Updated:** 2026-07-06 — Session 1 activation reflect (Live Folder renamed to Random Projects + Jot subfolder; Sophia wired to `.claude/agents/`).
+**Last Updated:** 2026-07-06 — Session 2 close (Jot files + operator Screenshots folder reflected).
 **Owner:** Sophia (COO)
 
 ---
@@ -24,7 +24,7 @@ graph LR
     v01b --> CEO["1. Sage's CEO Folder/"]
     v01b --> COO["2. Sophia's COO Folder/"]
     v01b --> PO1["3. Phase 0 & 1/ — empty at baseline"]
-    v01b --> LIVE["4. Random Projects - Live Folder/ — active (task-tracker, status-board, Jot mini-project)"]
+    v01b --> LIVE["4. Random Projects - Live Folder/ — active (task-tracker, status-board, Jot mini-project, operator Screenshots)"]
     v01b --> ML["5. Master Library/"]
     v01b --> BT["6. Blank Universal Templates/"]
     v01b --> GS["Getting-Started.md"]
@@ -92,7 +92,7 @@ graph LR
 | `1. Sage's CEO Folder/` | Master Guides, SOPs (+ pair-named Mermaids), soul/session/artifacts subfolders | Soul + session records filled |
 | `2. Sophia's COO Folder/` | COO Suite (sophia-coo.md, SOPs, List-Management Mermaid), TLL, operational/AAR shells | Operational files deployed; Sophia wired to `.claude/agents/` |
 | `3. Phase 0 & 1/` | README only — empty at baseline | Populated as Phase 0/1 produce records |
-| `4. Random Projects - Live Folder/` | Active — task-tracker, status-board, and the Jot mini-project subfolder | Renamed at Session 1; active work lands here |
+| `4. Random Projects - Live Folder/` | Active — task-tracker, status-board, the Jot mini-project subfolder, and the operator's Screenshots folder | Renamed at Session 1; active work lands here |
 | `5. Master Library/` | ML Operations, flat 9-agent Soul Folder, agent descriptions, Research Reports | On-demand agent pulls; resources cataloged |
 | `6. Blank Universal Templates/` | 24 blank templates + README | Templates pulled and deployed |
 

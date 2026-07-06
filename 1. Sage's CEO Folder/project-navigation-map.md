@@ -54,6 +54,8 @@ Rolling record of folder renames, restructures, and moves. Updated live when HK 
 |------|---------|--------|
 | 2026-07-06 | 1 | `4. Named Project - Live Folder/` renamed to `4. Random Projects - Live Folder/` (Phase 0 activation) |
 | 2026-07-06 | 1 | `4. Random Projects - Live Folder/Jot - Personal Notes System/` created (first mini-project subfolder) |
+| 2026-07-06 | 2 | Jot subfolder: Rose + Soren reports filed (S1 close), `jot-brainstorm-notes.md` created (S2) |
+| 2026-07-06 | 2 | `4. Random Projects - Live Folder/Screenshots/` — operator-created, noticed at S2 close; contents unreviewed; untracked in git pending Jay |
 
 ---
 
@@ -61,16 +63,18 @@ Rolling record of folder renames, restructures, and moves. Updated live when HK 
 
 Where we are right now. Updated at session start review and after major phase transitions.
 
-**As of:** Session 1 — 2026-07-06
+**As of:** Session 2 — 2026-07-06
 
 | Item | State |
 |------|-------|
 | Current phase | Phase 1 — open container operations (Phase 0 activation completed Session 1) |
 | P/M Lead | None — Sophia's lists serve the whole project |
 | Involvement score | 0–1 (full auto; Jay brings direction) |
-| Active mini-projects | Jot — Personal Notes System (SCOPING; awaiting Jay: device list + sync channel) |
+| Active mini-projects | Jot — Personal Notes System (BRAINSTORMING; constraints locked: no cloud, terminal-or-installed-app, desktop-only/no phone; terminal leaning, not locked) |
+| Jot open threads | Capture moment, note shape, door order, "no cloud" definition → sync (GitHub repo vs Syncthing — Syncthing needs Soren clearance) |
 | Jot security gates | Soren CLEARED WITH CONDITIONS — `go mod verify` + `govulncheck` before first build; re-clear any upstream pull |
-| GitHub remote | LIVE — `lacerda4269-rgb/random-claude-projects` linked at Session 1 close; all commits pushed |
+| GitHub remote | LIVE — `lacerda4269-rgb/random-claude-projects` linked at Session 1 close; push at every close |
+| Screenshots folder | Operator-created in Live Folder; untracked in git; purpose + git handling pending Jay |
 
 ---
 

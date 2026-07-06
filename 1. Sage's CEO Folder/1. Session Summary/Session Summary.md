@@ -9,6 +9,35 @@
 
 ---
 
+## Session 2 — 2026-07-06
+
+**Close type:** Solo close by Sage (no agent active this session — Sophia stood down at S1 close; solo-close verification pass run per Session-Close-SOP exception).
+
+**What was accomplished:**
+- **GitHub remote linked and synced.** Jay created `https://github.com/lacerda4269-rgb/random-claude-projects.git`; remote added as `origin`, all Session 1 commits pushed. The S1 Step 7 deviation is retroactively closed — pushes now run at every close.
+- **Jot brainstorm opened — three hard constraints locked by Jay:** (1) NOT cloud based; (2) delivery is terminal app OR downloadable/installable desktop app; (3) phone is OFF the table — target devices are computer, laptop, mini-PC (desktop-class only). Captured in `jot-brainstorm-notes.md` (Jot subfolder).
+- **Jay walked the terminal workflow** (two panes: Jot beside Claude Code; live co-edit; "TV/notebook" caveat explained in plain language). His read: terminal "might be winning" — logged as a leaning, NOT locked.
+- **Step 0 sweep fixes at close:** three governance docs updated together (Jot's three files + new Screenshots folder reflected — Item 141).
+
+**Key decisions and why:**
+- **Screenshots folder (operator-created, noticed at close): kept OUT of git.** Jay gave a blanket "go" but never answered what the folder is or whether it should publish; Sage declined to push unreviewed operator content to GitHub on a guess. Untracked, documented in governance docs, open question below.
+- Jot brainstorm runs as dialog with live capture to `jot-brainstorm-notes.md` — leanings recorded separately from locked decisions so nothing gets treated as final prematurely.
+
+**What to do next (explicit ordering):**
+1. **Resume the Jot brainstorm** — open threads, in Jay's own order: the capture moment (his real habit), note shape (stream vs. library vs. stream-then-promote), which door first (terminal leaning), and his definition of "not cloud based" (decides sync: private GitHub repo vs. Syncthing — Syncthing would need Soren clearance as a new external tool).
+2. **Then lock decisions and scope the build** — no build until shape is locked; Soren's two gates (`go mod verify` + `govulncheck`) run first when it starts.
+3. **Screenshots folder** — ask Jay: what it's for, and does it sync to GitHub or stay local. Currently untracked.
+
+**Open questions:**
+- Jot: capture moment, note shape, door order, "no cloud" definition → sync mechanism.
+- Screenshots folder: purpose + git handling (untracked pending Jay).
+
+**Source documents used at this close (Item 15):** `Session-Close-SOP.md` (procedure; solo-close exception applied), `git status` + governance docs (verified against disk state — solo verification pass), `jot-brainstorm-notes.md` (state check).
+
+**Named closing-check responses (Step 5 enforcement):** No agent active this session — Active Agents Check: NO (documented). Sophia's standing lessons question: N/A — not activated this session; her S1 stand-down was clean. Sage's own check: no corrections or mistakes to log this session; no Gotcha entries; no new pending changes.
+
+---
+
 ## Session 1 — 2026-07-06
 
 **What was accomplished:**

@@ -44,20 +44,29 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 
 ## In Progress
 
-- [ ] Session 1 close — COO lane complete (Session Summary + Index written, Gotcha logged, Pending Changes queued, governance docs fixed); awaiting Sage's review + Steps 7–8 (local commit)    _Session 1_
+- [ ] Jot brainstorm — opened S2, mid-conversation (Jay stepped away). Living capture: `jot-brainstorm-notes.md` in the Jot subfolder.
 
 ---
 
 ## Up Next
 
-- [ ] Jot: Jay confirms product shape (device list + sync channel) before any build
-- [ ] GitHub remote creation (Jay) — then first push (Step 7 is local-only until then)
+- [ ] Jot: resume brainstorm → lock capture moment, note shape, door order, "no cloud" definition → sync mechanism
+- [ ] Ask Jay: `Screenshots/` folder (Live Folder) — purpose + publish-to-GitHub or stay local (currently untracked)
 
 ---
 
 ## Blocked / On Hold
 
-- [ ] GitHub remote creation — **waiting on Jay.** Local git is initialized; remote deferred as an open question Sage flagged.
+- None.
+- ~~GitHub remote creation~~ — **CLOSED S2:** Jay created `lacerda4269-rgb/random-claude-projects`; remote linked, all commits pushed. Push at every session close.
+
+---
+
+## Completed (Container — post-Phase 0)
+
+- [x] Session 1 full close (all 8 SOP steps; local-only Step 7 documented)    _Completed: 2026-07-06 (S1)_
+- [x] GitHub remote linked + full history pushed    _Completed: 2026-07-06 (S2)_
+- [x] Session 2 solo close (Sage; verification pass run)    _Completed: 2026-07-06 (S2)_
 
 ---
 
@@ -85,8 +94,10 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 # Mini-Project: Jot — Personal Notes System
 
 **Subfolder:** `4. Random Projects - Live Folder/Jot - Personal Notes System/`
-**Status:** SCOPING — awaiting Jay's confirmation on product shape before any build. No build work started.
+**Status:** BRAINSTORMING (S2) — constraints locked, shape conversation open, no build work started.
 **Logged:** 2026-07-06 (Session 1)
+
+**Locked constraints (Jay, S2):** NOT cloud based. Terminal app OR downloadable/installable desktop app. Phone OFF the table — devices: computer, laptop, mini-PC (desktop-class only). Terminal door LEANING, not locked.
 
 **Scope:** Revamp the `board` repo (https://github.com/The-Coding-Trader/board — MIT, Go terminal kanban app) into a personal notes system for Jay. Keep its Markdown-file storage engine (atomic saves, live-reload, Claude co-edit); rebuild the UI from kanban cards to a notes experience.
 
@@ -112,8 +123,11 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 - [x] **CLOSED — Provenance (Rose open Q):** is `The-Coding-Trader` Jay's own GitHub account? **Settled 2026-07-06** — Jay confirmed it's a friend's account, freshly created, safe. Provenance closed. Soren's two build-time conditions stand unchanged.
 
 ## Open Scope Questions — pending Jay's answers
-- [ ] **Device list** for portability/sync — which of Jay's devices the vault must reach.
-- [ ] **Sync channel** — cloud drive vs. private GitHub repo for the synced Markdown vault folder.
+- [x] **CLOSED — Device list (S2):** computer, laptop, mini-PC — desktop-class only; phone OFF the table.
+- [ ] **Sync channel** — narrowed by S2 no-cloud constraint: private GitHub repo vs. Syncthing (peer-to-peer). Hinges on Jay's definition of "not cloud based." Syncthing = new external tool → Soren clearance required before use.
+- [ ] **Capture moment** — Jay's real note-taking habit (where/when notes actually happen).
+- [ ] **Note shape** — running stream vs. titled library vs. stream-then-promote (Sage's lean).
+- [ ] **Which door first** — terminal (leaning) vs. installable desktop app.
 
 ## Decisions Made
 | Date | Decision | Reason |
@@ -126,6 +140,7 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 |------|---------------|-----------|
 | 2026-07-06 (S1) | Mini-project opened and logged. Rose fit report + Soren conditional clearance recorded. Both security conditions logged as open gate items. | Await Jay's product-shape confirmation |
 | 2026-07-06 (S1) | Provenance question CLOSED (Jay: friend's fresh account, safe). Added portability/sync scope requirement — Markdown vault, device list + sync channel pending Jay. | Await Jay's product-shape + device/sync answers |
+| 2026-07-06 (S2) | Brainstorm opened. Constraints LOCKED: no cloud, terminal-or-installed-app, phone off table (desktop-only). Device-list question CLOSED. Terminal leaning logged (not locked). Brainstorm capture file created. | Resume brainstorm: capture moment, note shape, door order, "no cloud" definition → sync |
 
 ---
-_Last updated: 2026-07-06 (Session 1 — session close)_
+_Last updated: 2026-07-06 (Session 2 — solo close by Sage)_

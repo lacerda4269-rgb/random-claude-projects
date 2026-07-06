@@ -2,7 +2,7 @@
 
 **Owner:** Sage / Sophia (shared)
 **Project:** Random Projects
-**Updated:** Session 1 — 2026-07-06 (session close)
+**Updated:** Session 2 — 2026-07-06 (solo session close by Sage)
 
 ---
 
@@ -10,7 +10,7 @@
 
 > *One-line project state. What phase are we in? What is the active focus?*
 
-Phase 0 activation complete; container live and in Phase 1 open operations. First mini-project **Jot — Personal Notes System** is in SCOPING — awaiting Jay's device list + sync channel before any build. Full auto mode (involvement 0–1).
+Container in Phase 1; GitHub remote live and fully synced. **Jot — Personal Notes System** is in BRAINSTORMING — constraints locked (no cloud, terminal-or-installed-app, desktop-only/no phone), terminal leaning, shape conversation resumes when Jay returns. Full auto mode (involvement 0–1).
 
 ---
 
@@ -18,7 +18,7 @@ Phase 0 activation complete; container live and in Phase 1 open operations. Firs
 
 *What is actively being worked on right now.*
 
-- **Jot — Personal Notes System** (SCOPING): `board` repo evaluated (Rose) and security-cleared with conditions (Soren). Awaiting Jay's device list + sync channel before build. Two Soren security gates logged as open items for build time.
+- **Jot — Personal Notes System** (BRAINSTORMING): shape conversation open — capture moment, note shape, door order, and "no cloud" definition → sync mechanism still to lock. Living capture in `jot-brainstorm-notes.md`. Two Soren security gates standing for build time.
 
 ---
 
@@ -26,8 +26,8 @@ Phase 0 activation complete; container live and in Phase 1 open operations. Firs
 
 *What comes immediately after the current work completes.*
 
-- Receive the first mini-project whenever Jay brings one.
-- Write the first Session Summary entry at Session 1 close.
+- Resume the Jot brainstorm with Jay; lock decisions; then scope the build (Soren gates first).
+- Ask Jay about the `Screenshots/` folder — purpose + publish or stay local (currently untracked).
 
 ---
 
@@ -48,7 +48,8 @@ Phase 0 activation complete; container live and in Phase 1 open operations. Firs
 
 | Item | Phase | Reason | Owner | Since |
 |------|-------|--------|-------|-------|
-| GitHub remote creation | Phase 0 | Deferred — open question flagged to Jay; local git initialized in the meantime | Sage / Jay | S1 (2026-07-06) |
+
+*No on-hold items. (GitHub remote — resolved S2: linked and synced.)*
 
 ---
 
@@ -60,7 +61,9 @@ Phase 0 activation complete; container live and in Phase 1 open operations. Firs
 - Phase 0 COO lane complete (operational files, session records, lessons log, tracker, status board) — S1.
 - Jot mini-project scoped and logged; provenance resolved; portability requirement added — S1.
 - Governance-doc staleness caught at Step 0 and fixed (all three docs + 3 READMEs); Gotcha Entry 1 logged — S1.
+- GitHub remote linked (`lacerda4269-rgb/random-claude-projects`); full history pushed — S2.
+- Jot brainstorm opened: constraints locked, device question closed, terminal leaning captured — S2.
 
 ---
 
-*Updated: Session 1 — 2026-07-06 (session close)*
+*Updated: Session 2 — 2026-07-06 (solo session close by Sage)*

@@ -118,7 +118,11 @@ Random Projects/   (live instance of the MUIP — activated Session 1, 2026-07-0
 │   ├── README.md
 │   ├── task-tracker.md                  (created Session 1)
 │   ├── status-board.md                  (created Session 1)
-│   └── Jot - Personal Notes System/     (first mini-project — created Session 1)
+│   ├── Jot - Personal Notes System/     (first mini-project — created Session 1)
+│   │   ├── rose-research-report-board-repo.md       (filed Session 1 — Rose's fit assessment)
+│   │   ├── soren-security-clearance-board-repo.md   (filed Session 1 — CLEARED WITH CONDITIONS)
+│   │   └── jot-brainstorm-notes.md                  (created Session 2 — living brainstorm capture)
+│   └── Screenshots/                     (operator-created — noticed Session 2; contents unreviewed by team; untracked in git pending Jay's call)
 │
 ├── 5. Master Library/
 │   ├── README.md

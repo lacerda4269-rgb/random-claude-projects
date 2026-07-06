@@ -163,7 +163,7 @@ N/A — internal logic only. All communication is between Jay, Sage, and the age
 ### 5.2 Open Questions
 
 - [x] GitHub repository — RESOLVED Session 1 close: Jay created `https://github.com/lacerda4269-rgb/random-claude-projects.git`; remote linked and all Session 1 commits pushed.
-- [ ] Jot notes-system shape — device list + sync channel (Jay thinking it over).
+- [ ] Jot notes-system shape — PARTIALLY answered (S2): NOT cloud based; terminal OR installable desktop app; phone OFF the table (devices: computer, laptop, mini-PC). Still open: capture moment, note shape, door order (terminal leaning), "no cloud" definition → sync mechanism.
 
 ---
 

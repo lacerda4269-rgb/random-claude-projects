@@ -24,6 +24,7 @@
 
 | Entry | Date | File | Key Topics |
 |---|---|---|---|
+| Session 2 | 2026-07-06 | Session Summary.md | GitHub remote linked and synced, Jot brainstorm opened (no-cloud, terminal-or-app, phone off table, desktop-only devices), terminal leaning not locked, Screenshots folder found and held out of git, solo close by Sage |
 | Session 1 | 2026-07-06 | Session Summary.md | Phase 0 activation complete (CEO + COO lanes), container model set, Jot mini-project scoped (Rose fit report, Soren cleared with conditions, provenance resolved, portability requirement), governance-docs staleness caught and fixed, first full session close |
 
 *Index fills as sessions run.*
