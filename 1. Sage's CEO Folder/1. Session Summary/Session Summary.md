@@ -37,7 +37,7 @@
 
 **Safety-net catch sweep (Item 76) — findings:**
 - **Root README residual — RESOLVED (Sage, at close):** the "What This Is" / "How to Start a New Project" sections carried MUIP-template language contradicting the ACTIVE status line. Reconciled with an activated-instance banner marking those sections as MUIP-heritage reference — sections preserved, not rewritten.
-- **Rose's Jot fit report routing — RESOLVED:** confirmed via the project file index — Rose's report and Soren's clearance both live in `4. Random Projects - Live Folder/Jot - Personal Notes System/` (project-specific, not the ML), per the Item 76 routing check.
+- **Rose's Jot fit report routing — RESOLVED:** both reports were captured from agent messages and filed by Sage as project artifacts in `4. Random Projects - Live Folder/Jot - Personal Notes System/` (project-specific, not the ML), per the Item 76 routing check, and pointered in the project file index — `rose-research-report-board-repo.md` (fit assessment) and `soren-security-clearance-board-repo.md` (CLEARED WITH CONDITIONS, two build-time gates).
 - **Personal-notes space — RESOLVED:** the project file index records the Phase 0 ruling — no personal-notes folder exists; `ME - Jay.md` and `3. Jay's Project Office` are team-readable references, not personal notes. Closes my earlier Phase 0 flag.
 - No uncaptured decisions found; all Session 1 decisions are in the task-tracker Decisions table and this entry.
 
