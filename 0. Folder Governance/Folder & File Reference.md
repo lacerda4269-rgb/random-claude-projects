@@ -2,7 +2,7 @@
 
 **Version:** 0
 **Status:** ACTIVE PROJECT INSTANCE — Random Projects (activated Session 1, 2026-07-06). Live instance of the MUIP baseline; structural deltas from baseline are recorded in the activation section and change log below.
-**Last Updated:** 2026-07-06 — Session 1 activation reflect (Item 141: Live Folder renamed to Random Projects, Jot subfolder added, Phase 0 files created — all three governance docs updated together).
+**Last Updated:** 2026-07-10 — Session 3 (Item 141: `Personal Note taker/` folder created — Jot mini-project + Screenshots nested under it; `Pure randomness/` folder created, empty; trackers + README confirmed at Live Folder root after an accidental move was reverted — all three governance docs updated together).
 **Owner:** Sophia (COO)
 
 ---
@@ -21,6 +21,9 @@
 | S1-2 | *(new)* | `4. Random Projects - Live Folder/Jot - Personal Notes System/` | Tree + TreeView | Done S1 |
 | S2-1 | *(new files)* | Jot subfolder: `rose-research-report-board-repo.md`, `soren-security-clearance-board-repo.md` (S1), `jot-brainstorm-notes.md` (S2) | Tree + Reference | Done S2 |
 | S2-2 | *(new, operator-created)* | `4. Random Projects - Live Folder/Screenshots/` | Tree + TreeView + Reference; git handling pending Jay | Done S2 (docs) |
+| S3-1 | `4. Random Projects - Live Folder/Jot - Personal Notes System/` + `.../Screenshots/` | `4. Random Projects - Live Folder/Personal Note taker/` (both re-nested beneath it) | Tree + TreeView + Reference + project-file-index + project-navigation-map | Done S3 |
+| S3-2 | *(new, empty)* | `4. Random Projects - Live Folder/Pure randomness/` | Tree + TreeView + Reference | Done S3 (docs) |
+| S3-3 | *(accidental move — reverted)* | `task-tracker.md`, `status-board.md`, `README.md` swept into `Personal Note taker/` during housekeeping, then moved back to Live Folder root by Sage | No doc change — CLAUDE.md paths verified still correct | Reverted S3 |
 
 ---
 
@@ -269,18 +272,18 @@ The full per-agent file listing now lives under `5. Master Library/1. Soul Folde
 ### `4. Random Projects - Live Folder/`
 
 **Purpose:** Project-specific workspace for active operational records and working documents — items belonging to this project specifically and not template material. **Renamed from `4. Named Project - Live Folder/` at Phase 0 (Session 1).**
-**Current state (Session 1):** Active. Holds the container's canonical `task-tracker.md` and `status-board.md`, plus one per-mini-project subfolder. Each mini-project Jay brings gets its own subfolder here.
+**Current state (Session 3):** Active. Holds the container's canonical `task-tracker.md`, `status-board.md`, and `README.md` at root (container masters — they serve all mini-projects, so they stay at root). Mini-project content nests below: `Personal Note taker/` groups the Jot mini-project and its Screenshots; `Pure randomness/` is now a live mini-project folder (went live Session 3 with Jay's TMA/Guppy/LSMA guide work order).
 **Renamed (Session 265, baseline):** `6. Named Project - WorkTree/` → `4. Named Project - Live Folder/` (git "WorkTree" metaphor dropped); renamed again to `Random Projects` at this project's Phase 0.
 **On-demand Shared/Cross-Agent layer:** the cross-agent handoff subfolder is created here on first need (see this folder's README).
 **Owner:** Sage (CEO); agents contribute as directed.
 
 | File / Subfolder | Description |
 |------------------|-------------|
-| `README.md` | Folder purpose, governance, and the on-demand Shared/Cross-Agent section. |
-| `task-tracker.md` | Canonical living task tracker for the container (created Session 1). |
-| `status-board.md` | Snapshot status board for the container (created Session 1). |
-| `Jot - Personal Notes System/` | First mini-project subfolder (created Session 1). Scope: revamp the `board` repo into a personal notes system. Status: BRAINSTORMING (Session 2). Holds Rose's fit report, Soren's clearance, and the living brainstorm notes. |
-| `Screenshots/` | Operator-created folder (noticed Session 2). Contents unreviewed by the team; kept OUT of git pending Jay's answer on purpose + whether it syncs to GitHub. |
+| `README.md` | Folder purpose, governance, and the on-demand Shared/Cross-Agent section. Container master — stays at root. |
+| `task-tracker.md` | Canonical living task tracker for the container (created Session 1). Container master — stays at root. |
+| `status-board.md` | Snapshot status board for the container (created Session 1). Container master — stays at root. |
+| `Personal Note taker/` | Housekeeping folder (created Session 3) grouping the Jot mini-project and its Screenshots. Holds: `Jot - Personal Notes System/` (first mini-project — created Session 1; scope: revamp the `board` repo into a personal notes system; status BRAINSTORMING as of Session 2; holds Rose's fit report, Soren's clearance, and the living brainstorm notes) and `Screenshots/` (operator-created; contents unreviewed by team; published to GitHub by Jay himself — commit 4b5cc2a "my push"; publish/tracking question CLOSED, answer: published. S3 move under Personal Note taker restages at next push). |
+| `Pure randomness/` | Live mini-project folder (created empty Session 3; went live same session). Holds Jay's TMA/Guppy/LSMA guide work order — source `TMA_Guppy_LSMA_Guide_v3.docx`, deliverables `TMA_Guppy_LSMA_Executive_Summary.txt` (D1, done) and `TMA_Guppy_LSMA_Guide_Masterpiece.txt` (D2, done — ~9,486 words). Both delivered S3, pending Jay's acceptance. Tracked in task-tracker + status-board. |
 
 ---
 

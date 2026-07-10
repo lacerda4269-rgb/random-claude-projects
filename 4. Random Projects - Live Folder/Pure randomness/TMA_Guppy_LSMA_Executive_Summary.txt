@@ -1,0 +1,122 @@
+========================================================================
+EXECUTIVE SUMMARY
+TMA Overlay / Guppy GMMA / LSMA 21 — Cross Signals Guide (v3)
+========================================================================
+
+WHAT THIS DOCUMENT IS
+
+A guide to three chart indicators — tools that draw lines over a price
+chart to help read what the market is doing — and, more importantly,
+how the three work together as one system. Each tool runs at a
+different speed and answers a different question. None of them tells
+you WHERE to enter a trade; that job belongs to price structure
+(support and resistance levels). These three decide whether a trade
+at that spot is worth taking.
+
+
+THE THREE TOOLS, IN PLAIN ENGLISH
+
+1. TMA RIBBON (the slow one) — "What kind of market is this?"
+
+   Four smoothed average lines of price (21, 50, 100, and 200 bars),
+   read as two groups: a short group (average of the 21 and 50) and a
+   long group (average of the 100 and 200). The gap between the two
+   groups — and whether both are pointing the same way — tells you the
+   market's big-picture condition (the "regime"): broadly rising or
+   broadly falling.
+
+   Why groups instead of single lines? Any single line gives false
+   hope — the fast line bends upward on every little bounce even in a
+   falling market. The group construction filters that out. A real
+   turn requires BOTH groups moving the same direction.
+
+   Key point: this tool is deliberately slow. It confirms big changes
+   late, but it is rarely wrong. It is never traded off directly — it
+   just sets the backdrop.
+
+2. GUPPY GMMA (the middle one) — "Who is in this market?"
+
+   Two bundles of six lines each. The fast bundle (the "trader
+   ribbon") tracks short-term traders; the slow bundle (the "investor
+   ribbon") tracks longer-term money. What matters is how wide each
+   bundle is fanned out (wide = agreement/conviction, squeezed
+   together = indecision), and whether the fast bundle is above or
+   below the slow one.
+
+   The earliest useful signal: when both bundles squeeze tight (the
+   market "coiling") and then the trader ribbon fans out in one
+   direction — that fires before any official crossover.
+
+   The hardest rule in the whole document lives here: when the trader
+   ribbon is in EXTREME expansion (wide, fanned, accelerating), you do
+   not bet against it. Extreme bullish = no shorts. Extreme bearish =
+   no longs. No exceptions. This is called a kill gate.
+
+3. LSMA 21 (the fast one) — "Does this exact moment confirm?"
+
+   A statistical best-fit trend line through the last 21 price bars —
+   not an average of the past, but the current trend projected to
+   right now. You read two things: its slope (which way it points and
+   how steeply) and its curvature (whether it is speeding up or
+   slowing down).
+
+   Because it is fast, it gives false signals in choppy markets. Two
+   rules tame it: (1) a "dead zone" — a nearly flat slope counts as no
+   signal at all; (2) curvature only counts when it agrees with slope.
+   A falling line that is "curving up" is a decline slowing down, NOT
+   a market turning up.
+
+   It is used only at decision points — when price reaches a level
+   that matters, this tool says "momentum confirms" or "momentum
+   rejects."
+
+
+HOW THEY WORK TOGETHER
+
+Three speeds, three questions:
+   - TMA (slowest):  What is the market doing overall?
+   - Guppy (middle): Who is participating, and is the move backed?
+   - LSMA (fastest): Does momentum confirm at this exact moment?
+
+The playbook the document lays out:
+
+   FULL ALIGNMENT — all three point the same way: highest-conviction
+   condition. Trade only in that direction; ignore counter-signals.
+
+   FAST LAYER DISAGREES — the slow tools say uptrend, the LSMA flips
+   down: that is a pullback, not a reversal. You wait. The
+   highest-quality recurring setup in this system is the fast layer
+   rotating BACK into agreement right at a structural level.
+
+   EARLY REVERSAL — the two faster tools turn against a still-intact
+   slow ribbon: earliest tradeable evidence of a real change. Smaller
+   size until the Guppy fully confirms; the TMA is always last to
+   admit it.
+
+   NO-TRADE — all three tangled, flat, or in dead zones: no regime
+   exists. Standing down IS the correct output.
+
+
+THE RULES WORTH REMEMBERING
+
+   - Never fight a fully ordered, separating ribbon. Lowest-
+     probability trade available.
+   - Extreme Guppy expansion is an absolute kill gate — no counter-
+     trades, period.
+   - Slowing down is not turning around. A narrowing spread or an
+     upward curve during a decline is deceleration, not reversal.
+   - The entry spot always comes from price structure. The three
+     indicators only qualify, filter, and confirm it.
+   - Disagreement across all three speeds means stand down.
+
+
+BOTTOM LINE (the document's own rule of thumb)
+
+The TMA ribbon tells you what the market is. The Guppy tells you who
+is in it. The LSMA tells you whether the moment confirms. Structure
+picks the spot — these three decide whether the spot gets traded.
+
+========================================================================
+Source: TMA_Guppy_LSMA_Guide_v3.docx (as provided — summary only,
+no additions, no outside research)
+========================================================================

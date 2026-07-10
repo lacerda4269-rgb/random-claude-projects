@@ -2,7 +2,7 @@
 
 **Version:** 0
 **Status:** Living Document — ACTIVE PROJECT INSTANCE (Random Projects). Updates with Folder & File Reference and Visual TreeView (Item 141).
-**Last Updated:** 2026-07-06 — Session 1 activation reflect (Live Folder renamed to Random Projects, Jot subfolder added, Phase 0 files shown in tree).
+**Last Updated:** 2026-07-10 — Session 3 (housekeeping reflect: `Personal Note taker/` folder created — Jot mini-project + Screenshots nested under it; `Pure randomness/` folder created, empty; trackers + README confirmed at Live Folder root).
 **Owner:** Sophia (COO)
 
 ---
@@ -115,14 +115,19 @@ Random Projects/   (live instance of the MUIP — activated Session 1, 2026-07-0
 │   └── README.md
 │
 ├── 4. Random Projects - Live Folder/    (renamed from "Named Project" — Session 1)
-│   ├── README.md
-│   ├── task-tracker.md                  (created Session 1)
-│   ├── status-board.md                  (created Session 1)
-│   ├── Jot - Personal Notes System/     (first mini-project — created Session 1)
-│   │   ├── rose-research-report-board-repo.md       (filed Session 1 — Rose's fit assessment)
-│   │   ├── soren-security-clearance-board-repo.md   (filed Session 1 — CLEARED WITH CONDITIONS)
-│   │   └── jot-brainstorm-notes.md                  (created Session 2 — living brainstorm capture)
-│   └── Screenshots/                     (operator-created — noticed Session 2; contents unreviewed by team; untracked in git pending Jay's call)
+│   ├── README.md                        (container master — at root)
+│   ├── task-tracker.md                  (container master — created Session 1, at root)
+│   ├── status-board.md                  (container master — created Session 1, at root)
+│   ├── Personal Note taker/             (housekeeping folder — created Session 3; groups the Jot mini-project and its Screenshots)
+│   │   ├── Jot - Personal Notes System/     (first mini-project — created Session 1)
+│   │   │   ├── rose-research-report-board-repo.md       (filed Session 1 — Rose's fit assessment)
+│   │   │   ├── soren-security-clearance-board-repo.md   (filed Session 1 — CLEARED WITH CONDITIONS)
+│   │   │   └── jot-brainstorm-notes.md                  (created Session 2 — living brainstorm capture)
+│   │   └── Screenshots/                 (operator-created; moved under Personal Note taker Session 3; contents unreviewed by team; published to GitHub by Jay — commit 4b5cc2a; S3 move restages at next push)
+│   └── Pure randomness/                 (live mini-project — went live Session 3; Jay's TMA/Guppy/LSMA guide work order — both deliverables delivered)
+│       ├── TMA_Guppy_LSMA_Guide_v3.docx              (source guide supplied by Jay)
+│       ├── TMA_Guppy_LSMA_Executive_Summary.txt      (D1 — exec summary, done)
+│       └── TMA_Guppy_LSMA_Guide_Masterpiece.txt      (D2 — masterpiece expanded guide, ~9,486 words; Rose draft + Sage review to Fable 5 standard)
 │
 ├── 5. Master Library/
 │   ├── README.md
@@ -260,3 +265,4 @@ Random Projects/   (live instance of the MUIP — activated Session 1, 2026-07-0
 | Version | Date | Change |
 |---------|------|--------|
 | 0 (instance) | 2026-07-06 | Session 1 activation reflect: Live Folder renamed to Random Projects; Jot subfolder + task-tracker + status-board added; root CLAUDE.md, CEO index/nav-map, filled soul, session records, operational files, TLL log, and `.claude/agents/sophia-coo.md` shown in tree. Updated with Reference + TreeView (Item 141). |
+| 0 (instance) | 2026-07-10 | Session 3 housekeeping reflect: `Personal Note taker/` folder created under Live Folder — `Jot - Personal Notes System/` and `Screenshots/` re-nested beneath it; `Pure randomness/` folder created (empty). Trackers + README confirmed at Live Folder root (an accidental move of them into Personal Note taker was reverted before this update). Updated with Reference + TreeView (Item 141). |

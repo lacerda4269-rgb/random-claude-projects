@@ -8,7 +8,7 @@
 **Philosophy:** Trust, but verify. Status reports — including this file — are inputs to independent verification, not substitutes for it. Approach agreements in good faith; confirm compliance independently. Collaboration and risk management run in parallel, not in trade-off. This is the standing operating principle behind why this file exists and how it is used.
 **Entry standard:** Type | Counter | Status | Session | What Happened | Root Cause | Fix Applied | Watch-Out Rule
 **Created:** Session 1 — 2026-07-06
-**Last Updated:** Session 1 — 2026-07-06 (Entry 1 added at session close)
+**Last Updated:** Session 3 — 2026-07-10 (Entry 1 counter → 2: pattern recurred, caught + fixed same-session)
 
 ---
 
@@ -44,7 +44,7 @@
 
 | # | Session | Type | Counter | Status | Topic |
 |---|---------|------|---------|--------|-------|
-| 1 | 1 | Gap | 1 | Applied | Phase 0 folder rename/creation left the three governance docs stale |
+| 1 | 1 | Gap | 2 | Applied | Structural folder change requires the Item 141 three-doc governance update (recurred S3 — caught + fixed same-session) |
 
 ---
 
@@ -53,9 +53,9 @@
 ### Entry 1 — Session 1
 
 **Type:** Gap
-**Counter:** 1
+**Counter:** 2
 **Status:** Applied
-**Session:** 1
+**Session:** 1 (first occurrence); recurred Session 3
 
 **What Happened:** Phase 0 activation renamed the Live Folder (`Named Project` → `Random Projects`) and created a full set of new files (root CLAUDE.md, CEO index/nav-map, filled soul, session records, COO operational files, TLL log, tracker + status board, `.claude/agents/sophia-coo.md`). The three Folder Governance docs — `Folder & File Reference.md`, `Folder & File Tree.md`, `Visual TreeView.md` — were not updated at the time and stayed in pristine MUIP-baseline form. The staleness was caught at the Step 0 pre-close sweep, not during the work that caused it.
 
@@ -64,6 +64,8 @@
 **Fix Applied:** All three governance docs updated together this session per Item 141 (Live Folder rename, Jot subfolder, and all Phase 0 files reflected). Process fix queued to Sophia's Pending Changes List for AAR: add a governance-docs update step to the Getting-Started Phase 0 sequence.
 
 **Watch-Out Rule:** Any folder rename or file creation — at Phase 0 or later — must trigger the Item 141 three-doc governance update in the same session as the change, not at the close sweep. Until Getting-Started codifies the step, treat it as a standing manual check at Phase 0 and confirm again at every Step 0 pre-close sweep.
+
+**Recurrence — Session 3 (2026-07-10):** Jay made a between-sessions structural change ("housekeeping"): created `Personal Note taker/` inside the Live Folder and moved the Jot mini-project + Screenshots under it, created an empty `Pure randomness/` folder, and accidentally swept the container master trackers + README into `Personal Note taker/` along with it. The accidental tracker move was caught at session start by Sage's structure check (raised with Jay) and independently confirmed by Sophia's activation check without seeing Sage's position — the 3rd-set-of-eyes pattern. Jay confirmed it unintentional; Sage reverted it (masters back at Live Folder root). All five affected navigation docs (three governance docs + project-file-index + project-navigation-map) were updated the same session; project CLAUDE.md session-start paths were verified still correct (no edit). **What this recurrence shows:** the watch-out rule held — the change was caught and reconciled same-session rather than going stale — but it held on manual vigilance, not a codified step. The trigger recurring confirms this is a pattern (counter → 2) and strengthens Pending AAR #1 (add a governance-doc update step to Getting-Started's Phase 0 sequence). **Verification note for Sage:** this is event-based verification evidence (structural-change event recurred, fix held) — candidate for Applied → Verified at Sage's call, though the manual-vigilance dependency is the reason to keep AAR #1 open.
 
 ---
 

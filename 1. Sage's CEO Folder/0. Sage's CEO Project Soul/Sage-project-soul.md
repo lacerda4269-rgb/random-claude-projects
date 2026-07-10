@@ -1,10 +1,10 @@
 # Random Projects — Project Soul
 
-**Version:** 1.0
+**Version:** 1.1
 **Project:** Random Projects (multi-mini-project container)
 **Started:** 2026-07-06
 **Status:** Active — Phase 0 complete; open container operating in Phase 1
-**Last Updated:** 2026-07-06 (Session 1)
+**Last Updated:** 2026-07-10 (Session 3)
 
 ---
 
@@ -159,11 +159,14 @@ N/A — internal logic only. All communication is between Jay, Sage, and the age
 | Version | Date | What Changed | Why |
 |---------|------|-------------|-----|
 | 1.0 | 2026-07-06 | Phase 0 activation — soul filled, roster set, container model defined | Project launch (Session 1) |
+| 1.1 | 2026-07-10 | Mini-project 2 (Pure Randomness — TMA/Guppy/LSMA guide) received and DELIVERED same session; Live Folder re-organized (Personal Note taker grouping folder holds Jot + Screenshots); Screenshots open question closed | Session 3 — container scope evolved |
 
 ### 5.2 Open Questions
 
 - [x] GitHub repository — RESOLVED Session 1 close: Jay created `https://github.com/lacerda4269-rgb/random-claude-projects.git`; remote linked and all Session 1 commits pushed.
 - [ ] Jot notes-system shape — PARTIALLY answered (S2): NOT cloud based; terminal OR installable desktop app; phone OFF the table (devices: computer, laptop, mini-PC). Still open: capture moment, note shape, door order (terminal leaning), "no cloud" definition → sync mechanism.
+- [x] Screenshots folder (purpose + publish-or-local) — RESOLVED Session 3: holds Jot reference material (`friends version.png`, screenshot of the friend's board app); Jay had already committed and pushed it himself (commit 4b5cc2a), so it is published — question closed. Folder now lives under `Personal Note taker/`.
+- [ ] Pure randomness folder — mini-project 1 in it (TMA/Guppy/LSMA guide) DELIVERED S3, pending Jay's acceptance. Open: does the folder host future random drops, or retire after this one closes?
 
 ---
 

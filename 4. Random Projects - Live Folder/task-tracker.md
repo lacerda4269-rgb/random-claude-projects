@@ -45,13 +45,14 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 ## In Progress
 
 - [ ] Jot brainstorm — opened S2, mid-conversation (Jay stepped away). Living capture: `jot-brainstorm-notes.md` in the Jot subfolder.
+- ~~Pure Randomness (TMA/Guppy/LSMA Guide) — D2 masterpiece~~ **DELIVERED S3** — both deliverables complete; pending Jay's acceptance. See mini-project section below.
 
 ---
 
 ## Up Next
 
 - [ ] Jot: resume brainstorm → lock capture moment, note shape, door order, "no cloud" definition → sync mechanism
-- [ ] Ask Jay: `Screenshots/` folder (Live Folder) — purpose + publish-to-GitHub or stay local (currently untracked)
+- [x] ~~Ask Jay: `Screenshots/` folder — publish-to-GitHub or stay local~~ **CLOSED S3** — Jay published `friends version.png` himself (commit 4b5cc2a "my push"); answer: published. S3 move under Personal Note taker restages at next push.
 
 ---
 
@@ -88,6 +89,8 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 |------|---------------|-----------|
 | 2026-07-06 (S1) | Phase 0 activation. Sage completed CEO lane; Sophia built COO operational files, session records, lessons log, and this tracker + status board. First mini-project (Jot) logged — status SCOPING. | Await Jay's product-shape confirmation on Jot; resolve GitHub remote with Jay; write Session 1 close entry |
 | 2026-07-06 (S1) | Session close run. Step 0 sweep caught governance-doc staleness — fixed all three docs + 3 READMEs (Item 141). Session Summary + Index written; Gotcha Entry 1 logged; 2 items queued to Pending AAR; TLL Entry 1 logged. | Sage review of Session Summary; Steps 7–8 local commit + clean-tree check |
+| 2026-07-10 (S3) | Housekeeping folders (`Personal Note taker/`, `Pure randomness/`) reflected across governance + nav docs; accidental tracker move caught + reverted; Gotcha Entry 1 counter → 2. Pure Randomness went live — Jay's TMA/Guppy/LSMA work order logged as mini-project 2 (D1 exec summary done, D2 masterpiece in progress). | Rose delivers D2 draft → Sage review to Fable 5 standard |
+| 2026-07-10 (S3) | Pure Randomness D2 masterpiece DELIVERED. Rose full research + draft (Sonnet, high effort); Sage review to Fable 5 standard (7 edits). Both deliverables now on disk. Work order complete pending Jay's acceptance. | Jay's acceptance → close mini-project |
 
 ---
 
@@ -143,4 +146,45 @@ Random Projects — standing container for multiple small, unrelated mini-projec
 | 2026-07-06 (S2) | Brainstorm opened. Constraints LOCKED: no cloud, terminal-or-installed-app, phone off table (desktop-only). Device-list question CLOSED. Terminal leaning logged (not locked). Brainstorm capture file created. | Resume brainstorm: capture moment, note shape, door order, "no cloud" definition → sync |
 
 ---
-_Last updated: 2026-07-06 (Session 2 — solo close by Sage)_
+
+# Mini-Project: Pure Randomness — TMA/Guppy/LSMA Guide
+
+**Subfolder:** `4. Random Projects - Live Folder/Pure randomness/`
+**Status:** DELIVERED (S3) — both deliverables complete; pending Jay's acceptance.
+**Logged:** 2026-07-10 (Session 3)
+
+**Work order (Jay, S3):** Turn the provided trading-indicator guide into two text deliverables in this folder. Full auto mode.
+
+**Source material:** `TMA_Guppy_LSMA_Guide_v3.docx` — trading-indicator guide (TMA / Guppy / LSMA), supplied by Jay in the folder.
+
+**Deliverables:**
+- **D1 — Executive summary** → `TMA_Guppy_LSMA_Executive_Summary.txt`. Concise summary of the provided guide. Owner: Sage.
+- **D2 — "Masterpiece" expanded guide** → `TMA_Guppy_LSMA_Guide_Masterpiece.txt`. Expanded, best-in-class version. Rose researches/drafts (Sonnet, high effort); Sage reviews and iterates to Fable 5 standard.
+
+## Completed
+- [x] D1 — Executive summary written    _Completed: 2026-07-10 (S3) — file present in folder_
+- [x] D2 — Masterpiece expanded guide. Rose full research + draft (Sonnet, high effort); Sage review to Fable 5 standard (7 edits). Final: `TMA_Guppy_LSMA_Guide_Masterpiece.txt` (~9,486 words). Source-rule fidelity verified by grep.    _Completed: 2026-07-10 (S3)_
+
+## In Progress
+- None — both deliverables complete.
+
+## Up Next
+- [ ] Jay's acceptance of the two deliverables (closes the work order).
+
+## Blocked / On Hold
+- None.
+
+## Decisions Made
+| Date | Decision | Reason |
+|------|----------|--------|
+| 2026-07-10 | Two-deliverable split (exec summary + expanded masterpiece) | Jay's work order — a quick-read summary plus a definitive long-form guide |
+| 2026-07-10 | D2 drafted by Rose (Sonnet, high effort), reviewed/iterated by Sage to Fable 5 standard | Research-heavy expansion; Sage owns final quality |
+
+## Session Log
+| Date | What Was Done | Next Step |
+|------|---------------|-----------|
+| 2026-07-10 (S3) | Mini-project opened — `Pure randomness/` went live with Jay's TMA/Guppy/LSMA work order. D1 exec summary delivered by Sage. D2 masterpiece drafting kicked off (Rose). | Rose delivers D2 draft → Sage review to Fable 5 standard |
+| 2026-07-10 (S3) | D2 delivered. **Rose** produced the full research + draft (Sonnet, high effort); Sage reviewed to Fable 5 standard across 7 edits (factual fix to the shakeout example's condition count, one overclaim softened to source, intraday-vs-daily settings clarification added, wording/provenance polish). Source guide's rules verified unchanged by grep. Final file ~9,486 words. | Await Jay's acceptance to close the work order |
+
+---
+_Last updated: 2026-07-10 (Session 3 — Pure Randomness both deliverables delivered; pending Jay's acceptance)_

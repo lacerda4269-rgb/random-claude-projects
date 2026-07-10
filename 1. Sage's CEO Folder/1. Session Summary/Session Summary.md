@@ -9,6 +9,47 @@
 
 ---
 
+## Session 3 — 2026-07-10
+
+**Close type:** Full close — Sophia (COO) active as resident agent; Sage orchestrating; Jay present. Jay reviewed the Step 0 report and approved close with Sage's Screenshots recommendation folded in.
+
+**What was accomplished:**
+- **Session-start structure catch (Sage caught; Sophia independently confirmed).** Jay disclosed at session start that he'd made a between-sessions "housekeeping" change to the Live Folder: two new folders — `Personal Note taker/` (into which the Jot mini-project subfolder and the `Screenshots/` folder were re-nested) and `Pure randomness/` (new, then empty). **Sage** ran the structure check, identified that the container **master trackers + README had been accidentally swept into `Personal Note taker/`** along with the intended content, and raised the scope problem with Jay — those masters serve the whole container, not one mini-project. **Sophia** then flagged the same scope problem **independently, without seeing Sage's position** — an uninfluenced second catch. This is the 3rd-set-of-eyes / fresh-eyes pattern working: the catch is Sage's, the independent confirmation is Sophia's.
+- **Accidental tracker move confirmed and reverted.** Jay confirmed the tracker/README grab was accidental. Sage restored `task-tracker.md`, `status-board.md`, and `README.md` to the Live Folder root before the documentation pass. Final structure: masters at root; `Personal Note taker/` holds Jot + Screenshots; `Pure randomness/` live.
+- **Two documentation passes (Sophia).** (1) Updated the Item 141 governance trio + `project-file-index.md` + `project-navigation-map.md` to the new `Personal Note taker/` nesting; verified project `CLAUDE.md` session-start paths still correct (masters back at root — no edit); confirmed `Session-Start-SOP.md` clean (false positive killed — it delegates to CLAUDE.md, carries no tracker path); path-checked `Getting-Started.md` and `Sage-project-soul.md` — both clean (generic/role-based references, no stale paths). (2) Wired Pure Randomness in as a live mini-project and flipped its governance descriptions from "empty" to live; then closed out D2 on delivery.
+- **Pure Randomness went live — Jay's TMA/Guppy/LSMA work order.** Jay dropped a source document (`TMA_Guppy_LSMA_Guide_v3.docx`, a trading-indicator guide) in `Pure randomness/` and issued a two-deliverable work order (both `.txt`, in that folder), full auto:
+  - **D1 — Executive summary** (`TMA_Guppy_LSMA_Executive_Summary.txt`): written by **Sage**.
+  - **D2 — "Masterpiece" expanded guide** (`TMA_Guppy_LSMA_Guide_Masterpiece.txt`, ~9,486 words): **Rose** produced the full research + draft (Sonnet, high effort); **Sage** reviewed to Fable 5 standard across **7 edits** — a factual fix to the shakeout example's condition count, one overclaim softened to match the source, an intraday-vs-daily settings clarification added, plus wording/provenance polish. Source guide's rules verified unchanged by grep. **DELIVERED pending Jay's acceptance.**
+- **Gotcha Entry 1 counter 1 → 2.** The structural-change-needs-governance-update pattern recurred (Jay's housekeeping move). Held at **Applied** (Sage's call) — the fix "held" only via human vigilance (Sage's structure check, independently confirmed by Sophia), not a codified step, so Pending AAR #1 stays open. Full recurrence note logged in Gotcha.md.
+- **Screenshots question CLOSED.** The Step 0 finding "Screenshots untracked pending Jay" was stale: `friends version.png` was already published to GitHub by Jay's own commit (4b5cc2a "my push") before this session. Answer: published. Current working-tree delete+untracked is just the unstaged S3 move, which restages at the next push. Stale current-state annotations updated across Tree, nav-map, status-board, task-tracker (historical S2 rows left intact).
+
+**Key decisions and why:**
+- **Master trackers stay container-level at the Live Folder root** — not nested under any one mini-project. Confirmed with Jay after Sage flagged the accidental move (Sophia independently confirming); preserves the container model (one tracker governs all mini-projects).
+- **Gotcha Entry 1 held at Applied, not promoted to Verified** (Sage's call). Reasoning: the catch was human vigilance at session start, not a codified safety net — so the AAR #1 codification need is still real. Event-based verification evidence noted, but promotion withheld.
+
+**What to do next (explicit ordering):**
+1. **Jay reads and accepts both Pure Randomness deliverables** → Sophia flips the mini-project status DELIVERED → CLOSED and rolls it into the session records.
+2. **Resume the Jot brainstorm** at Jay's open threads (unchanged from S2): capture moment, note shape, door order, and the "no cloud" definition → sync mechanism.
+
+**Open questions:**
+- Jot threads — unchanged (capture moment, note shape, door order, "no cloud" definition → sync channel: private GitHub repo vs. Syncthing).
+- **Pure randomness folder scope** — does it host future one-off drops, or stays scoped to this single TMA/Guppy/LSMA project? Pending Jay.
+
+**Safety-net catch sweep (Item 76) — findings:**
+- **Uncaptured decisions — NONE.** Both S3 decisions (masters-stay-at-root; Gotcha held at Applied) plus the mini-project decisions (two-deliverable split; Rose-drafts/Sage-reviews) are recorded in the task-tracker Decisions tables and this entry.
+- **Artifact routing — CLEAN.** Pure Randomness deliverables are project-specific, correctly filed in `Pure randomness/` (not the Master Library) and pointered in `project-file-index.md` (new "Mini-Project 2" section). The source `.docx` is operator-supplied input material (like `ME - Jay.md`), not an external pipeline resource — no Soren clearance gate applies (considered and cleared).
+- **Residual/stale content — RESOLVED this session.** Swept three stale current-state classes: Screenshots "untracked/pending Jay," Pure randomness "empty/not scoped," and D2 "in progress/not on disk." All flipped to current; verified by grep. Historical change-log rows and event-summary headers intentionally left as-is (they record the moment accurately).
+- **Reusable tool/skill candidate (flagged, not built):** a Cosmo session-start hook that diffs the live folder structure against the last-recorded governance tree and prompts the Item 141 three-doc update when they diverge. This session is the second occurrence of governance-doc drift (S1 Phase 0, S3 operator housekeeping) — a strong automation hook. Reinforces and broadens Pending AAR #1.
+
+**Source documents used at this close (Item 15):** `Session-Close-SOP.md` (procedure); `git log` + `git status` (sweep verification — confirmed 4b5cc2a published the screenshot, confirmed unstaged S3 moves); the five reference docs (governance trio + `project-file-index.md` + `project-navigation-map.md`); `Gotcha.md` (recurrence logging); `Team-Lessons-Log.md` (lesson logging).
+
+**Named closing-check responses (Step 5 enforcement):**
+- **Sophia (COO):** "One lesson worth logging, and it's a recurrence. Gotcha Entry 1's pattern — structural change and governance-doc currency drifting apart — fired again this session, but from a new trigger: Jay's *between-sessions* housekeeping, not Phase 0. The through-line is that the trigger was never 'Phase 0' specifically; it's *any* structural change, whenever and by whomever it originates, including the operator between sessions. Our only safety net right now is human vigilance at session start — this session Sage's structure check caught it and my activation check independently confirmed it; neither is a codified step. Logged as Team Lessons Log Entry 4 (recurrence of Entry 1); the rule broadens AAR #1's scope from 'a Phase 0 step' to 'a standing session-start structure-drift check' (ideally the Cosmo hook flagged above). Beyond that: no misrouted artifacts, no uncaptured decisions, Gotcha is current."
+- **Rose (Researcher):** "Both real Fable-review edits trace to things I should have caught before handoff. (a) The shakeout example's 'two required conditions missing' was asserted without re-counting against the rule list — I should have re-counted. (b) I researched the 21/50/100/200 settings using daily-chart reasoning (trading-days, golden-cross history — correctly sourced), but never checked that reasoning against the source's own intraday NQ examples, and should have flagged the daily-vs-intraday mismatch in my handoff report rather than leave it for review. No other loose ends — the only withheld claim is the unverifiable GMMA development year, noted plainly in the doc." (Lesson logged as TLL Entry 5.)
+- **Sage (CEO):** "No corrections against me this session; nothing to log. Project `lessons.md` stays empty."
+
+---
+
 ## Session 2 — 2026-07-06
 
 **Close type:** Solo close by Sage (no agent active this session — Sophia stood down at S1 close; solo-close verification pass run per Session-Close-SOP exception).

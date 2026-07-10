@@ -84,8 +84,17 @@
 
 | File | Path | Notes |
 |------|------|-------|
-| Rose research report (board repo) | `4. Random Projects - Live Folder/Jot - Personal Notes System/rose-research-report-board-repo.md` | Fit assessment; provenance resolved in-file |
-| Soren security clearance (board repo) | `4. Random Projects - Live Folder/Jot - Personal Notes System/soren-security-clearance-board-repo.md` | CLEARED WITH CONDITIONS — 2 build-time gates |
+| Rose research report (board repo) | `4. Random Projects - Live Folder/Personal Note taker/Jot - Personal Notes System/rose-research-report-board-repo.md` | Fit assessment; provenance resolved in-file. Path deepened Session 3 (Jot nested under `Personal Note taker/`). |
+| Soren security clearance (board repo) | `4. Random Projects - Live Folder/Personal Note taker/Jot - Personal Notes System/soren-security-clearance-board-repo.md` | CLEARED WITH CONDITIONS — 2 build-time gates. Path deepened Session 3. |
+| Jot brainstorm notes | `4. Random Projects - Live Folder/Personal Note taker/Jot - Personal Notes System/jot-brainstorm-notes.md` | Living brainstorm capture (created Session 2). |
+
+## Pure Randomness — TMA/Guppy/LSMA Guide (Mini-Project 2)
+
+| File | Path | Notes |
+|------|------|-------|
+| Source guide | `4. Random Projects - Live Folder/Pure randomness/TMA_Guppy_LSMA_Guide_v3.docx` | Trading-indicator guide supplied by Jay (Session 3). |
+| D1 — Executive summary | `4. Random Projects - Live Folder/Pure randomness/TMA_Guppy_LSMA_Executive_Summary.txt` | Done (Sage). |
+| D2 — Masterpiece expanded guide | `4. Random Projects - Live Folder/Pure randomness/TMA_Guppy_LSMA_Guide_Masterpiece.txt` | Done — ~9,486 words. Rose full research + draft (Sonnet, high effort); Sage review to Fable 5 standard (7 edits). |
 
 ---
 
@@ -93,7 +102,9 @@
 
 | Folder | Purpose |
 |--------|---------|
-| `4. Random Projects - Live Folder/` | Active resources folder — one subfolder per mini-project |
+| `4. Random Projects - Live Folder/` | Active resources folder. Container masters (`task-tracker`, `status-board`, `README`) at root; mini-project content in subfolders below |
+| `4. Random Projects - Live Folder/Personal Note taker/` | Groups the Jot mini-project and its Screenshots (created Session 3) |
+| `4. Random Projects - Live Folder/Pure randomness/` | Live mini-project (Session 3) — Jay's TMA/Guppy/LSMA guide work order; both deliverables delivered (D1 exec summary + D2 masterpiece), pending Jay's acceptance |
 | `3. Jay's Project Office` (in CEO Folder) | Jay's input zone — reference docs and materials for the team |
 
 > **Personal notes ruling (Phase 0, Session 1):** No personal-notes folder exists in this project. `ME - Jay.md` travels pre-filled as a team reference (Getting-Started §1) and `3. Jay's Project Office` is Jay's input zone for the team to work from — both are team-readable, neither is personal notes. If Jay creates a personal-notes folder later, record it here and in the project soul as hands-off.

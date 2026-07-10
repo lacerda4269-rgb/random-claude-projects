@@ -5,7 +5,7 @@
 **Project:** Random Projects
 **Version:** 0
 **Created:** 2026-07-06 (Session 1)
-**Updated:** 2026-07-06 (Session 1)
+**Updated:** 2026-07-10 (Session 3 — Entries 4 (Sophia) + 5 (Rose) added)
 **Status:** Active
 
 ---
@@ -53,6 +53,8 @@ This is not a blame log. It is not a policy document. It is an honest record of 
 | 1 | 1 | 2026-07-06 | Sophia | Template→live instances don't self-rebase — governance/meta docs must be flipped at Phase 0 | AAR — pending review |
 | 2 | 1 | 2026-07-06 | Soren | A read-only web repo clearance can't run the automated CVE scan — deliver as CLEARED WITH CONDITIONS, carry the scan as a build-time gate | AAR — pending review |
 | 3 | 1 | 2026-07-06 | Rose | Flag operator-owned/adjacent repo provenance as an early question for Jay — a cheap human confirm collapses a whole licensing branch | AAR — pending review |
+| 4 | 3 | 2026-07-10 | Sophia | Governance-doc drift trigger is *any* structural change (incl. operator between-sessions), not just Phase 0 — broaden the fix from a Phase 0 step to a standing session-start structure-drift check | AAR — pending review |
+| 5 | 3 | 2026-07-10 | Rose | When researching "why these numbers," verify the research's implicit assumptions (e.g. daily-bar convention) against the timeframe the source actually demonstrates (e.g. intraday) — surface any mismatch in the handoff, don't leave it for the reviewer | AAR — pending review |
 
 ---
 
@@ -122,7 +124,37 @@ This is not a blame log. It is not a policy document. It is an honest record of 
 
 ---
 
-*All three Active Agents Check respondents logged by name (Sophia, Soren, Rose). Soren additionally verified `charm.land` is Charmbracelet's official vanity import domain, closing Rose's typosquat concern — handoff completed, recorded in the Session 1 Summary reconciliation note.*
+## Entry 4 — Session 3 — 2026-07-10 — Sophia
+
+**What happened:** Jay made a between-sessions "housekeeping" change to the Live Folder (created `Personal Note taker/` and `Pure randomness/`, re-nested the Jot mini-project and Screenshots, and accidentally swept the container master trackers + README into a mini-project folder). The governance/nav docs were stale against this new structure at session start; the accidental sweep was caught by Sage's structure check and independently confirmed by Sophia's activation check — human vigilance, not a codified step. This is the same class of drift as Entry 1 — the descriptive/reference layer lagging the physical structure — but from a new trigger.
+
+**Why it happened:** Entry 1's fix (and Pending AAR #1) is scoped to *Phase 0* activation. But structural changes don't only happen at Phase 0 — the operator can restructure between sessions at any time. When that happens, nothing in the flow re-bases the governance docs except a human noticing at session start. The trigger was never "Phase 0" specifically; it's *any* structural change, whenever and by whomever it originates.
+
+**Recurrence:** Recurrence of Entry 1 (governance/meta docs drifting from live structure). First occurrence was Phase 0 activation (S1); this occurrence was operator between-sessions housekeeping (S3). Gotcha Entry 1 counter incremented 1 → 2.
+
+**Rule going forward:** Broaden the fix from "a Phase 0 governance-docs step" to "a standing session-start structure-drift check" — at every session start, confirm the live folder structure still matches the governance tree; if it diverged (for any reason, including operator changes), run the Item 141 three-doc update in that session. Strong candidate for a Cosmo hook that diffs live structure vs. the recorded tree and prompts the update automatically.
+
+**Promotion status:** AAR — pending review (broadens the scope of Pending Changes AAR item 1).
+**Promotion destination:** Pending — candidate for `Getting-Started.md` (session-start sequence) and/or a Cosmo-built structure-drift hook.
+
+---
+
+## Entry 5 — Session 3 — 2026-07-10 — Rose (research domain)
+
+**What happened:** On the Pure Randomness D2 masterpiece, two of the seven Fable-review edits traced to things Rose says she should have caught before handoff: (a) the shakeout example asserted "two required conditions missing" without re-counting against the rule list; (b) she researched the 21/50/100/200 moving-average settings using daily-chart reasoning (trading-days, golden-cross history — correctly sourced) but never checked that reasoning against the source's own intraday NQ examples, and did not flag the daily-vs-intraday mismatch in her handoff report. The only withheld claim (the unverifiable GMMA development year) was noted plainly in the doc — handled correctly.
+
+**Why it happened:** Convention-based reasoning (a daily-bar assumption) was grafted onto a specific worked example (intraday) without checking that the timeframe/units matched. The mismatch was left for the downstream reviewer to catch rather than surfaced in the handoff.
+
+**Recurrence:** First occurrence.
+
+**Rule going forward (near-verbatim):** "When researching 'why these numbers' for a technical system, verify the research's implicit assumptions (here: daily-bar convention) against the timeframe the source material actually demonstrates (here: intraday), and surface any mismatch explicitly in the handoff report rather than let a downstream reviewer catch it. Applies beyond trading guides — any time convention-based reasoning gets grafted onto a specific worked example, check the timeframe/units match before it ships."
+
+**Promotion status:** AAR — pending review (Sage's read: team-general research-handoff practice, not soul-promotion material yet; first occurrence, no hot path).
+**Promotion destination:** Pending — candidate for Rose's soul / research handoff practice at AAR.
+
+---
+
+*Active Agents Check respondents logged by name across sessions: S1 — Sophia, Soren, Rose; S3 — Sophia, Rose, Sage (all captured in the Session 3 Summary named-responses block). Soren additionally verified `charm.land` is Charmbracelet's official vanity import domain, closing Rose's typosquat concern — handoff completed, recorded in the Session 1 Summary reconciliation note.*
 
 ---
 
@@ -131,3 +163,5 @@ This is not a blame log. It is not a policy document. It is an honest record of 
 | Version | Date | What Changed | Why |
 |---------|------|-------------|-----|
 | 0 | 2026-07-06 | Created at Phase 0 (Random Projects, Session 1) | Project activation — Getting-Started §4 |
+| 0 | 2026-07-10 | Entry 4 logged (Sophia) — governance-drift recurrence, trigger broadened beyond Phase 0 | Session 3 close, Step 5 |
+| 0 | 2026-07-10 | Entry 5 logged (Rose) — verify research assumptions against the source's demonstrated timeframe; surface mismatches in handoff | Session 3 close, Step 5 |

@@ -1,0 +1,451 @@
+THE TMA / GUPPY / LSMA TRADING SYSTEM
+A COMPLETE GUIDE — FOUNDATIONS, MECHANICS, AND PRACTICE
+
+This is the expanded edition of the original TMA Overlay / Guppy GMMA / LSMA 21 guide. Every rule, every signal definition, and every example from the original document is preserved exactly as written — nothing about the system logic has been changed. What has been added is everything around it: where these tools came from, why they are built the way they are, why the specific numbers (21, 50, 100, 200) were chosen, more worked examples, a list of the mistakes beginners make with each tool, a step-by-step checklist for reading them at the chart in real time, and a glossary so no term is ever a mystery.
+
+If you are new to trading, read this front to back once before you ever use it live. Nothing here assumes you already know what a moving average is.
+
+
+==================================================
+PART 1 — FOUNDATIONS: WHAT A MOVING AVERAGE ACTUALLY IS
+==================================================
+
+Imagine you are tracking your household grocery spending. Some weeks you spend a lot, some weeks very little — the number jumps around too much to tell if your spending is really trending up or down. So instead of looking at any single week, you look at your average spending over the last 4 weeks, and you recalculate that average every week, dropping the oldest week and adding the newest one. That rolling average smooths out the noisy week-to-week jumps and shows you the underlying trend.
+
+That is all a moving average is. It takes a window of the most recent prices, averages them, and slides that window forward one bar at a time. "Moving" refers to the window moving forward in time, not the average itself doing anything mysterious.
+
+Why traders bother with this at all: raw price, bar to bar, is mostly noise — small random pushes and pulls from thousands of individual buy and sell decisions. Somewhere inside that noise is a real signal: the underlying direction the market is actually leaning. A moving average is a noise filter. It cannot see the future and it cannot know the "true" trend with certainty — it can only describe what has already happened, smoothed out. That single fact — a moving average always describes the past — is the source of almost every strength and every weakness this entire system has, and it will come up again and again in this guide.
+
+There is a trade-off baked into every moving average: the more you smooth, the less noise you see, but the more you lag behind the current price. A very short average reacts fast but jumps around (still noisy). A very long average is calm and reliable but slow to admit anything has changed. No single moving average solves this trade-off — it can only be tuned along it. This is exactly why this system does not use one moving average. It uses several different types, at several different speeds, each doing a different job.
+
+There are four families of moving average worth understanding before going further — two of them (the TMA and the LSMA) are used directly in this system, one (the EMA) is the building block of the Guppy ribbons, and one (the SMA) is the plain-vanilla version the others are variations of. Understanding the difference between them in plain terms is the foundation for everything that follows.
+
+SIMPLE MOVING AVERAGE (SMA) — the plain grocery-spending average described above. Every price in the window counts equally, whether it is the oldest or the newest. Easy to understand, but slow to react because old data has just as much say as new data.
+
+EXPONENTIAL MOVING AVERAGE (EMA) — the same idea, but recent prices are weighted more heavily than older ones, with the weighting fading out smoothly the further back you go. Because new information counts more, an EMA reacts faster to a genuine change in direction than an SMA of the same length. This is why the Guppy ribbons, later in this guide, are built from EMAs rather than SMAs — the whole point of that tool is to read shifting participation quickly.
+
+TRIANGULAR MOVING AVERAGE (TMA) — a "double-smoothed" simple average: essentially an average of an average. Instead of weighting the newest data most heavily like an EMA does, a TMA weights the middle of its window most heavily and tapers off toward both the oldest and newest edges — hence "triangular," picturing a triangle-shaped weighting scheme with the peak in the center. The practical effect is a line even smoother and steadier than a plain SMA of the same length, at the cost of additional lag. That extra smoothness is exactly why the TMA Overlay in this system is built to answer the slowest, most structural question — regime — and is explicitly documented as too slow to time anything.
+
+LEAST-SQUARES MOVING AVERAGE (LSMA) — the odd one out, and the fastest tool in this stack. Instead of averaging prices at all, it fits the best straight line it can through the last N closes — the line that minimizes the total distance between itself and every price point in the window, a method called least squares — and then plots only the endpoint of that line, projected to the current bar. Because it is a fitted trend rather than a backward-looking average, it reacts to a genuine change in direction faster than an SMA, EMA, or TMA of the same length, with less of the built-in lag those methods carry. This is also exactly why it is the noisiest of the four — a line that reacts fast to real turns also reacts fast to false ones, which is the entire reason the slope dead zone and curvature-agreement rules exist later in this guide. Because it plots only the current endpoint of a fitted line rather than the whole line, it is sometimes called an "endpoint" moving average.
+
+One more piece of vocabulary worth having early: a moving average ribbon. When you plot several moving averages of different lengths on the same chart at once, the group of lines together is called a ribbon — like several strands woven side by side. A ribbon lets you read the relationship between multiple time horizons at a glance: how close together or far apart the lines are (compression versus expansion), and what order they stack in. Both the TMA Overlay and the Guppy GMMA are ribbons. The LSMA is a single line and is not a ribbon.
+
+
+==================================================
+PART 2 — WHERE THESE TOOLS CAME FROM: ORIGINS AND CREDIBILITY
+==================================================
+
+DARYL GUPPY AND THE GMMA
+
+The Guppy GMMA is named after its creator, Daryl Guppy, an Australian equity and derivatives trader, educator, and financial commentator. He is a regular commentator on CNBC Asia (where he has been referred to as "The Chart Man"), has written a weekly column for Technical Analysis of Stocks and Commodities magazine, and founded GuppyTraders.com in 1996 as a trading education service. He has authored a number of trading books over his career, including Share Trading, Market Trading Tactics, Trend Trading, and The 36 Strategies of the Chinese for Financial Traders, among others. The GMMA appears across several of these works as his core trend-reading tool.
+
+The reasoning behind the twelve-EMA construction is what makes the GMMA more than a decoration on a chart. Guppy built it around a simple market-behavior idea: a market is not one crowd, it is at least two crowds with different time horizons and different motivations, trading the same instrument at the same time. The short-term group — modeled by the six EMAs at 3, 5, 8, 10, 12, and 15 periods — stands in for short-term traders: fast money, quick to enter, quick to exit, reacting to the last few days of price action. The long-term group — modeled by the six EMAs at 30, 35, 40, 45, 50, and 60 periods — stands in for longer-horizon investors: slower capital, reacting to a month or more of price action, less easily shaken out by a few bad days.
+
+Neither ribbon by itself is the point. The relationship between them is. When both ribbons fan out wide and separate cleanly, it means both groups broadly agree on direction — real conviction, and a trend traders should respect rather than fight. When the ribbons compress toward each other and the twelve lines start to intertwine, it means the two groups no longer agree, or have stopped caring about the difference between "recent" and "less recent" price — a state of hesitation. Per Guppy's own research and writing on the indicator, a period where both ribbons compress at once is the earliest detectable warning that a real re-evaluation is underway, typically before any crossover between the ribbons confirms it — which is precisely the logic behind the PRE-BULL and PRE-BEAR expansion-from-compression signals defined later in this guide. The source document's description of this behavior matches Guppy's own published reasoning: compression signals agreement breaking down and often precedes the ribbon that expands out of it — usually the trader ribbon first, since fast money moves before slow money confirms.
+
+LINEAR REGRESSION AND THE LSMA
+
+The mathematics behind the LSMA — least squares — is not a trading invention. It is a general statistical method, developed independently by Adrien-Marie Legendre and Carl Friedrich Gauss in the early 1800s, for fitting the best possible straight line through a scattered set of data points by minimizing the squared distance between the line and every point. It has been used across science and engineering for two centuries for exactly one purpose: find the line that best represents a noisy set of measurements.
+
+Applying that same method to a rolling window of recent closing prices — refitting the line every single bar as the window slides forward, and plotting only where that freshly fitted line currently sits — is what turns a static statistical technique into a moving average. That is the entire idea behind the LSMA: instead of asking "what is the average price over the last 21 bars," it asks "if I drew the single best-fit trend line through the last 21 closes, where would that line be right now." Because a best-fit line responds directly to a change in the pattern of prices rather than simply accumulating them, it does not carry the same structural lag as an SMA, EMA, or TMA — which is exactly why it was chosen as the fastest, most reactive layer in this three-tool stack.
+
+THE TRIANGULAR MOVING AVERAGE'S ROLE
+
+The TMA does not have a named inventor or a research story in the way the GMMA does — it is a well-established, generic smoothing technique (an average of an average) used across many trading platforms and asset classes wherever the goal is the smoothest possible read of long-term structure, at the acknowledged cost of extra lag. Its use in this system is exactly that: the slowest, steadiest structural layer, deliberately built to be too slow to time entries — because timing entries was never its job.
+
+
+==================================================
+PART 3 — WHY THESE SPECIFIC SETTINGS
+==================================================
+
+WHY 21, 50, 100, 200 FOR THE TMA OVERLAY
+
+These four numbers were not chosen at random — each corresponds to a widely recognized unit of market time, which is exactly why they show up on charts across almost every platform and every asset class, not just this system.
+
+21 — There are roughly 21 trading days in a calendar month (once weekends and holidays are excluded), so a 21-period average on a daily-equivalent structure approximates "the last month." It is also a Fibonacci number (part of the sequence 1, 1, 2, 3, 5, 8, 13, 21, 34, 55...), and Fibonacci lengths are a long-standing convention in technical analysis — followed partly because so many traders watch the same numbers that they become self-reinforcing reference points.
+
+50 — Roughly the number of trading days in a calendar quarter. A 50-period average approximates "the last three months" of activity — intermediate-term structure, longer than a single swing but shorter than a full macro trend.
+
+100 — A round, widely watched number representing a longer intermediate horizon, roughly five months of trading activity — commonly used as a bridge between the quarterly (50) and yearly (200) horizons.
+
+200 — Roughly the number of trading days in a full calendar year, making the 200-period average the most widely followed "long-term trend" reference in all of technical analysis. It is one half of the most famous convention in the field: the "golden cross," where a rising 50-period average crossing above a 200-period average is treated by huge numbers of market participants as a long-term bullish signal (and the reverse, a "death cross," as bearish). Both crosses are explicitly lagging — by the time they print, the trend shift they describe is already well underway — which is exactly why the source document describes the short-group/long-group cross in this system the same way: "regime confirmation, not an entry signal."
+
+One honest note about these numbers: the trading-days reasoning above comes from daily charts, where one bar equals one day. On faster intraday charts — like the NQ examples used throughout this guide, where a bar might be one minute or five — the same numbers are kept by convention rather than calendar meaning. That convention still works, because what actually matters to this system is not what 21 bars "represents" but the relative spacing: 21 is always the fast read and 200 always the slow one, whatever the bar size, and the relationships between the lines behave the same way at every speed.
+
+This system does not use 50 and 200 as two isolated lines the way the classic golden cross does. Instead it averages 21 with 50 into a short group and 100 with 200 into a long group, and reads the spread between those two group averages rather than any single line. That group construction is what filters out the false signal a single fast line can give — a 21-period line, on its own, bends upward on almost any bounce inside a downtrend, because it only has three weeks of memory. Blending it with the steadier 50 before comparing it to the slow group requires more consistent evidence before the system calls a shift.
+
+WHY 21 FOR THE LSMA
+
+The same Fibonacci and "about a month" reasoning applies here, with an additional practical constraint specific to the LSMA: it needs to be short enough to react to a real trend change within a handful of bars — the entire value of using a fitted regression line instead of an average — but long enough that a single outlier bar cannot swing the fitted line on its own. Twenty-one closes is long enough to average out one-bar noise while still being short enough to catch a genuine multi-bar shift quickly. This is also exactly why the system does not trade the LSMA's raw output directly and instead filters it through a slope dead zone and a curvature-agreement rule (covered in Part 4.3) — a line reactive enough to be useful is, by the same coin, reactive enough to whipsaw in a sideways market, and those two rules exist specifically to manage that trade-off.
+
+
+==================================================
+PART 4 — THE THREE TOOLS, IN DEPTH
+==================================================
+
+------------------------------------------------
+4.1 — TMA OVERLAY: 21 / 50 / 100 / 200
+------------------------------------------------
+
+This TMA overlay plots four smoothed moving averages — 21, 50, 100, and 200 — as a four-line ribbon spanning short-term to macro structure. Read it as two groups, not four lines: the short group is the average of the 21 and 50; the long group is the average of the 100 and 200. The spread between those two group averages is the signal.
+
+WHY GROUPS INSTEAD OF FOUR SEPARATE LINES: any single line lies. A 21-period line reacts to only three weeks of price, so it bends upward on almost any two- or three-day bounce, even inside a firmly established downtrend — it has no memory long enough to "know" the bigger picture is still bearish. If you traded off that one line, you would get a false "curving up" read on nearly every pullback. Averaging it with the steadier 50 before you ever compare it to anything mutes that noise without discarding the responsiveness entirely. The same logic protects the long side: averaging 100 with 200 means one slow line's minor wobble cannot move the long group much on its own. The signal in this tool was deliberately built to require two lines to agree with each other, twice, before anything is said to have changed.
+
+Because the long group contains a 200-period average, this is the slowest structure on the chart. It defines the macro regime and changes its mind rarely. When it does, the statement carries weight.
+
+CROSSES UP
+
+Short group crosses above long group — The short group average (21/50) crossing above the long group average (100/200) is the macro bullish cross. By the time it prints, the up-move is well underway — regime confirmation, not an entry signal. WHY IT LAGS: a cross between two already-smoothed group averages can only happen after enough new higher closes have been fed into both averages to physically drag them through one another — which, by definition, takes real, sustained buying, not a single strong day.
+
+Spread inflection up — Before the cross: the downward spread stops widening, flattens, and narrows — with both groups starting to point up. The inflection is the early read; the cross is the late confirmation. WHY THIS WORKS AS AN EARLY READ: the spread between two averages is a rate-of-change measurement in disguise. It stops widening exactly when new price action starts pulling the faster group up quicker than the slower group can follow — the earliest numerical trace of new buying pressure showing up in the data, well before it accumulates into a full crossover.
+
+Bullish ordering intact — Lines ordered 21 / 50 / 100 / 200 top to bottom, all rising and separating = fully intact bullish state. Price dipping into the 21 or 50 while order holds is a pullback within regime, not a regime change.
+
+CROSSES DOWN
+
+Short group crosses below long group — Short group average crossing below long group average. Same character: late, heavy, rarely wrong about regime.
+
+Spread inflection down — Upward spread stops widening, both groups roll over and point down together. Both-groups agreement is mandatory — the short group dipping alone during an uptrend pullback does not qualify.
+
+Bearish ordering intact — Order inverts to 200 / 100 / 50 / 21 top to bottom, all falling = fully intact bearish state.
+
+EXAMPLE — Pullback vs. regime change
+
+NQ has rallied all morning. The ribbon reads 21 / 50 / 100 / 200 top to bottom, all four rising. Price sells off 60 points and closes below the 21 and the 50.
+
+Wrong read: "Price broke two moving averages — the trend is over."
+
+Right read: The line order never changed and the long group (100/200) never stopped rising. This is a pullback inside an intact bullish regime — exactly the environment where a long at a lower structural level is qualified, not a short.
+
+What would change the read: The 21/50 average actually crossing under the 100/200 average with both groups pointing down. That, and only that, is the ribbon changing regime.
+
+TRAP — Deceleration is not reversal
+
+The spread is narrowing but both groups are still falling. That is a downtrend slowing down, not turning up. Treating "spread narrowing" as CURVING UP is the classic false signal the group-vs-group construction exists to prevent. No bullish read exists until both groups point up. WHY THIS TRAP CATCHES BEGINNERS: a narrowing spread and a rising spread produce visually similar chart pictures at a glance — lines getting closer together — and the eye instinctively reads "coming together" as "about to turn." The system's rule is stricter than the eye: direction of both groups must actually flip, not merely slow down.
+
+Role in the stack: the TMA ribbon answers one question — what regime is the market in. It is too slow to time anything and should never be traded off directly.
+
+------------------------------------------------
+4.2 — GUPPY GMMA: 3/5/8/10/12/15 AND 30/35/40/45/50/60
+------------------------------------------------
+
+The standard Guppy plots two ribbons of six EMAs each. The short-term group (3, 5, 8, 10, 12, 15) is the trader ribbon — fast money and short-term positioning. The long-term group (30, 35, 40, 45, 50, 60) is the investor ribbon — slower capital that decides whether a move has real backing.
+
+Everything the GMMA says comes from three things: separation between the ribbons, compression or expansion within each ribbon, and the direction both point. Ribbon width is conviction — a fanned-out investor ribbon means longer-term holders agree; compression means agreement has broken down. When both ribbons compress at once, the market is coiling, and per Daryl Guppy's research the trader ribbon expanding out of that compression is the earliest detectable signature of the next move — firing before any crossover confirms it.
+
+WHY EMAs INSTEAD OF SMAs HERE: unlike the TMA overlay, which deliberately wants to be slow, the Guppy needs to react quickly to changes in who is buying and selling right now — that is its entire job, reading participation. An EMA's extra weight on recent data lets each of the twelve lines respond to a genuine shift in behavior within a handful of bars rather than dragging old, stale data along for weeks.
+
+CROSSES UP
+
+PRE-BULL: expansion from compression — The trader ribbon compresses, then its EMAs fan upward and separate — before any cross of the investor ribbon. Earliest Guppy signal, least confirmed. It earns weight when it happens at a meaningful level, not mid-range. WHY THIS FIRES FIRST: fast money reacts to new information — an order flow shift, a level holding, a piece of news — within a day or two. Twelve EMAs three to fifteen bars long can register that shift almost immediately; the investor ribbon, built from thirty-to-sixty-bar EMAs, is structurally incapable of moving that quickly, so it always confirms later by construction, not by coincidence.
+
+Trader ribbon crosses above investor ribbon — The full trader ribbon crossing above the investor ribbon: short-term buying pushed through investor supply and investors are not selling into it. Late by design — it confirms, it does not predict.
+
+RESUMING BULL: pullback re-expansion — In an uptrend, the trader ribbon compresses down into the investor ribbon, holds, and re-expands upward without a full cross-down. Usually higher quality than the original crossover — the pullback tested investor conviction and conviction held. WHY THIS IS HIGHER QUALITY: the first crossover only proves traders can push through investor supply once. A pullback that touches the investor ribbon and gets rejected upward again proves it a second time, under pressure, with the outcome genuinely in doubt in the moment — real confirmation, not just recurrence.
+
+CROSSES DOWN
+
+PRE-BEAR: expansion down — Trader ribbon fans downward out of compression — the early warning, same caveats as the long side.
+
+Trader ribbon crosses below investor ribbon — Full trader ribbon crossing below the investor ribbon: selling punched through investor demand and investors stepped aside.
+
+RESUMING BEAR: rally rejection — In a downtrend, the trader ribbon rallies into the investor ribbon, stalls, and re-expands downward — usually the cleanest short in the sequence.
+
+FADING vs. backed moves — If the investor ribbon compresses and rolls during a trader-ribbon event, the move has structural backing. If it stays fanned against the move, the event is likely a shakeout that fades. WHY THIS DISTINCTION MATTERS: a trader-ribbon cross by itself only tells you fast money moved. If slow money (the investor ribbon) is not also starting to bend the same direction, there is no larger pool of capital behind the move — and shakeouts, by definition, run out of fuel and reverse once the fast money that caused them finishes taking profit.
+
+EXAMPLE — Reading a lunchtime coil
+
+Midday, NQ goes quiet. Both Guppy ribbons compress into a tight braid — twelve EMAs nearly stacked on one price. No signal exists yet; the market is deciding.
+
+Then: The trader ribbon starts fanning downward — the 3 pulls away under the 15, gaps opening between the short EMAs. That is PRE-BEAR: the earliest evidence the coil is resolving down, printed well before the trader ribbon actually crosses the investor ribbon.
+
+How to use it: PRE-BEAR alone is a warning, not a trade. If price is also sitting at an upper structural level, the pre-detection plus the level is a qualified short. If price is mid-range, wait for the full ribbon cross.
+
+KILL GATE — Extreme expansion
+
+When the trader ribbon is in extreme bullish expansion — wide, fanned, all EMAs accelerating up — that is a hard NO SHORT condition regardless of what any faster signal shows. Mirror for extreme bearish expansion: NO LONG. Fighting an extreme ribbon is the single most expensive habit this indicator exists to break. WHY THIS IS A HARD GATE AND NOT JUST A CAUTION: extreme expansion means both the fast crowd and the slow crowd are pushing the same direction at maximum conviction, at the same time. Betting against that is not "finding an early reversal" — statistically it is betting against the two most powerful forces on the chart while they are both fully engaged, which is exactly the setup that produces the largest, fastest losses in trend-following systems.
+
+Role in the stack: the Guppy answers who is participating — and its extreme states act as directional kill gates over everything faster.
+
+------------------------------------------------
+4.3 — LSMA: PERIOD 21
+------------------------------------------------
+
+The LSMA(21) fits a least-squares regression line through the last 21 closes and plots the endpoint of that line on each bar. It is not an average of the past — it is the current fitted trend of the last 21 bars, projected to now. That makes it the fastest tool in this stack, with two readable outputs: slope (direction and rate of the fitted line) and curvature (whether that slope is accelerating or decelerating).
+
+At 21 periods it reacts within a few bars of a genuine turn — and whipsaws in chop. Two rules tame it. First, read slope with a dead zone: above a positive threshold = POS, below a negative threshold = NEG, everything between = FLAT, no signal. Second, curvature only counts when slope direction agrees: "curving up" while slope is still negative is a decline decelerating, not a bullish turn — acting on it means buying a falling line.
+
+WHY THE DEAD ZONE EXISTS: a fitted regression line recalculates completely on every single new bar, which means in a genuinely sideways, directionless market its slope will flicker between barely positive and barely negative from bar to bar, essentially by chance — not because the market changed its mind, but because the noise in a flat market is enough by itself to tip a fitted line one way or the other. The dead zone simply refuses to call anything a signal until the slope is strong enough to be more likely a real lean than noise.
+
+WHY CURVATURE NEEDS SLOPE AGREEMENT: curvature on its own only says the rate of change is shifting — it says nothing about which direction the line is actually pointed. A steeply falling line that is falling slightly less steeply than it was two bars ago is technically "curving up," but it is still a falling line. Requiring slope to already agree with the direction curvature is pointing prevents the system from mistaking a slowing decline for an actual reversal — the same deceleration-versus-reversal trap the TMA section warns about, showing up again at a faster timescale.
+
+CROSSES UP
+
+Slope crosses into POS — Slope crossing up through the positive threshold, out of the FLAT dead zone into POS. The true LSMA bullish cross — cleaner and only slightly slower than a raw zero cross.
+
+Curvature inflects up, slope agrees — Curvature inflecting upward while slope is positive: the fitted trend is up and accelerating up. After a stretch of curving down, this inflection is the strengthening-reversal read.
+
+Price reclaims the line (context only) — Price closing back above the LSMA(21) — fastest event, least reliable alone. Meaningful at a level (price reclaiming the LSMA at support); noise mid-range.
+
+CROSSES DOWN
+
+Slope crosses into NEG — Slope crossing down through the negative threshold into NEG — the true bearish cross.
+
+Curvature inflects down, slope agrees — Curvature inflecting downward while slope is negative: the decline is accelerating. LSMA curving down while price pushes into overhead resistance is the rejection signature — momentum failing exactly where structure says it should.
+
+Price loses the line (context only) — Price losing the LSMA(21) at a level — earliest exit warning for longs, earliest confirmation for shorts at resistance.
+
+EXAMPLE — Rejection at resistance
+
+NQ grinds up into a known upper level — say 26,480. As price tags the level, watch the LSMA(21), not the candles.
+
+Confirmed short: Price pokes above the level, but the LSMA slope flattens and curvature inflects down while slope goes negative. Momentum is dying exactly where structure says it should. The level did the locating; the LSMA did the confirming.
+
+Stand aside: Same level, but LSMA slope is firmly POS and curvature is still accelerating up as price arrives. Momentum is not failing — the level is more likely to break than hold. No short, even though price is "at resistance."
+
+The trap: LSMA "curving up" during a decline while slope is still NEG. That is deceleration, not reversal. Wait for slope agreement.
+
+Role in the stack: the LSMA(21) is the confirmation instrument at a decision point — not a standing entry trigger. When price arrives at a level that matters, it answers one question: is momentum confirming or rejecting?
+
+
+==================================================
+PART 5 — HOW THE THREE WORK TOGETHER
+==================================================
+
+Three tools, three speeds, three questions. The TMA ribbon (slowest) answers what regime the market is in. The Guppy (middle) answers who is participating and whether the move has backing. The LSMA(21) (fastest) answers whether momentum confirms at the moment of decision. None of them generates the entry — the entry location comes from price structure. These three qualify, filter, and confirm what happens when price gets there.
+
+THE DIVISION OF LABOR
+
+Regime (TMA) — TMA ribbon sets the regime and the default direction. Fighting a fully ordered, separating ribbon is the lowest-probability trade available. Ribbon intact bullish = shorts need substantially more evidence; mirror for bearish.
+
+Participation + kill gates (Guppy) — Guppy alignment with the TMA regime upgrades every signal in that direction. Extreme expansion is a hard kill gate: extreme bullish = no shorts, extreme bearish = no longs, period. Pre-detection states warn that the regime may be changing before the slower tools admit it.
+
+Confirmation at the level (LSMA 21) — Price reaches a structural level; the trade fires only if LSMA slope and curvature agree with the trade direction at that moment. Curving down at resistance = short confirmed. POS and accelerating into the same level = stand aside; the level likely breaks.
+
+AGREEMENT AND DISAGREEMENT
+
+Full alignment — TMA regime, Guppy participation, and LSMA momentum all pointing the same way: full-conviction condition. Take signals in that direction; ignore counter-signals.
+
+Fast layer disagrees — TMA and Guppy aligned, LSMA against: a pullback within trend. A waiting state, not a counter-trade. The setup is the LSMA rotating back into agreement at a structural level — typically the highest-probability recurring sequence this combination produces.
+
+Early reversal sequence — LSMA and Guppy pre-detection turning against a still-intact TMA regime: the earliest tradeable reversal evidence. Reduced size until the Guppy confirms with a full ribbon cross; the TMA will be last to admit the change.
+
+No-trade recognition — Guppy ribbons intertwined, TMA groups flat, LSMA slope living in the dead zone: no regime exists. Disagreement across all three speeds is itself the output — stand down.
+
+WHY THIS LAYERING WORKS BETTER THAN ANY ONE TOOL ALONE: each tool was chosen because it answers a question the other two structurally cannot. The TMA cannot tell you about participation because it does not separate fast money from slow money. The Guppy cannot tell you whether momentum is failing at a specific price level right now because its fastest line still spans three bars. The LSMA cannot tell you what regime the broader market is in because a 21-bar fitted line has no memory of anything before that window. Stacking them is not redundancy — each layer covers a blind spot the other two share.
+
+EXAMPLE — A full sequence, start to finish
+
+9:45 AM: TMA ribbon fully ordered bullish, Guppy trader ribbon fanned above the investor ribbon, LSMA(21) slope POS. Full alignment — long-only conditions.
+
+10:30 AM: Price pulls back 45 points. LSMA slope drops into NEG — fast layer flashes red. But the Guppy trader ribbon only compresses toward the investor ribbon without crossing, and the TMA order never changes. This is a pullback, not a reversal. Nothing to do yet but locate the lower level.
+
+10:55 AM: Price reaches the lower structural level. LSMA slope crosses back into POS with curvature inflecting up; the Guppy trader ribbon re-expands upward (RESUMING BULL). Both slower layers held, the fast layer rotated back into agreement at the level — the continuation long fires.
+
+2:10 PM: Price stalls at an upper level. LSMA curves down into NEG at the level — but the Guppy trader ribbon is in extreme bullish expansion. Kill gate: no short. Exit longs if desired; do not flip.
+
+
+==================================================
+PART 6 — ADDITIONAL WORKED EXAMPLES
+==================================================
+
+The three examples below extend the source document's walk-throughs with new scenarios, following the same NQ (Nasdaq futures) style. One of them is deliberately a trade the system keeps you OUT of.
+
+EXAMPLE — The trap that almost worked (a trade you should NOT take)
+
+NQ has been grinding lower for two sessions. The TMA ribbon reads fully bearish — 200 / 100 / 50 / 21 top to bottom, all four falling, well separated. Both Guppy ribbons have been fanned apart in a clean downtrend all morning.
+
+Around 11:15 AM, the Guppy trader ribbon suddenly compresses and then fans upward out of that compression — a textbook PRE-BULL signal, and it happens to print right as price taps a minor intraday support shelf. Taken in isolation, this looks exactly like the qualifying condition described in Part 4.2: an early signal at a meaningful level.
+
+Here is the discipline this system asks for before acting on it: check what the other two layers are doing. The TMA ribbon has not moved — it is still fully ordered bearish, all four lines still falling, no inflection in the spread. The Guppy investor ribbon (the slow half of the Guppy) has not compressed or rolled at all; it remains fanned wide, still pointing down, unmoved by the trader ribbon's flicker. Per the FADING vs. backed moves rule in Part 4.2, an event where the investor ribbon stays fanned against the move is likely a shakeout that fades, not a real reversal.
+
+Per the early reversal sequence rule in Part 5, a genuine early reversal needs the LSMA and Guppy pre-detection turning together against a still-intact regime — and even then, it calls for reduced size and waiting for the Guppy to confirm with a full ribbon cross, not for chasing the first flicker. Here, only one of the two fast layers (the Guppy trader ribbon) has moved at all; the LSMA slope is still firmly NEG with no curvature inflection. The early reversal sequence requires both fast layers turning together against the old regime — with only the Guppy moving and the LSMA still fully bearish, the required agreement simply is not there, and no early entry exists at any size.
+
+Correct action: no trade. Price does exactly what an unconfirmed shakeout does — the trader ribbon's brief fan-up stalls, compresses back down, and the downtrend resumes twenty minutes later, running through the minor support shelf that looked like it was holding. A trader who took the PRE-BULL signal in isolation, without checking the TMA regime and the investor ribbon, would have bought directly into a still-intact downtrend at its worst possible moment. This is precisely the situation the layered structure of Part 5 exists to prevent: one fast, unconfirmed signal is never sufficient on its own when the slower layers actively disagree with it.
+
+EXAMPLE — Recognizing genuine no-trade chop
+
+Late morning, NQ has been oscillating in a 25-point range for over an hour with no clear direction. The TMA ribbon's short group and long group are essentially flat and overlapping — no meaningful spread in either direction. Both Guppy ribbons are intertwined, the twelve EMAs crossing back and forth through each other with no clean separation on either side. The LSMA(21) slope has been ticking back and forth between barely-positive and barely-negative for the last dozen bars, never breaking out of the dead zone in either direction.
+
+This is the no-trade recognition state described in Part 5: disagreement, or more precisely the absence of agreement, across all three speeds simultaneously. There is no regime, no clear participation, and no momentum lean strong enough to clear the dead zone. Correct action: stand down and wait. No amount of staring at the 25-point range turns it into a tradeable structure — the system's output here, correctly read, is "there is currently nothing to do." A trader forcing a trade in this window is not reading a signal; they are inventing one, because the three tools together are explicitly reporting that none exists.
+
+EXAMPLE — A clean, complete winning sequence using the full checklist
+
+8:50 AM: NQ opens and rallies hard off the open. Within the first twenty minutes, the TMA ribbon flips to fully ordered bullish (21/50/100/200 top to bottom, separating). The Guppy trader ribbon crosses above the investor ribbon cleanly, both ribbons fanning apart. LSMA(21) slope is firmly POS with curvature still accelerating up. All three tools agree — full alignment, per Part 5.
+
+9:40 AM: Price pulls back into a known prior support level from the prior session. This is where the checklist in Part 8 gets applied in real time. First, TMA regime check: still fully ordered bullish, no change. Second, Guppy participation check: trader ribbon has compressed toward the investor ribbon on the pullback but has not crossed below it, and the investor ribbon never stopped rising — no kill gate active, no fading signal. Third, LSMA confirmation at the level: as price touches the support level, LSMA slope, which had dipped toward FLAT during the pullback, crosses back into POS with curvature inflecting up at the same moment.
+
+All three conditions the checklist calls for are satisfied at the same location: intact regime, backed participation, and momentum confirming exactly at the level. This is the RESUMING BULL pattern described in Part 4.2, and per that section's own note, pullback re-expansions of this kind are usually higher quality than the original crossover, because the pullback tested conviction and conviction held. The long is taken at the level with the LSMA confirmation as the trigger, not before it and not after price has already run away from the level.
+
+
+==================================================
+PART 7 — COMMON BEGINNER MISTAKES
+==================================================
+
+MISTAKES WITH THE TMA OVERLAY ALONE
+- Trading the moment the 21-line curls, without checking whether it is the whole short group and long group both agreeing. A single line curling is noise, not a signal.
+- Treating a narrowing spread as a trend change (the deceleration trap explained in Part 4.1). Narrowing is not reversing until both groups actually change direction.
+- Using the TMA cross as an entry trigger. It is documented in the source system as a lagging regime confirmation, not a timing tool — by the time it prints, a large part of the move is already over.
+
+MISTAKES WITH THE GUPPY GMMA ALONE
+- Treating PRE-BULL or PRE-BEAR (expansion from compression) as a standing entry signal by itself, especially away from any structural level. The source system is explicit that this signal earns weight only at a meaningful level, not mid-range.
+- Ignoring the investor ribbon entirely and trading off the trader ribbon's fast moves alone. The investor ribbon is what separates a real, backed move from a shakeout that fades — skipping it removes the entire point of using two ribbons instead of one moving average.
+- Fighting a kill gate. Seeing a fast bearish signal on another tool while the Guppy trader ribbon is in extreme bullish expansion, and shorting anyway "because the setup looks good." The kill gate exists specifically to override exactly this impulse.
+
+MISTAKES WITH THE LSMA(21) ALONE
+- Trading every zero-line cross without respecting the dead zone. In anything close to a sideways market, a raw zero cross will fire constantly and mostly incorrectly — this is the exact whipsaw problem the POS/NEG/FLAT dead zone exists to filter out.
+- Acting on curvature without checking that slope agrees. This is the single most common LSMA mistake described directly in the source material: buying a line that is "curving up" while its slope is still negative is buying a decline that is merely slowing down, not reversing.
+- Treating "price reclaims the line" as a standalone signal away from a level. The source system explicitly labels this the fastest and least reliable of the LSMA events — meaningful only at a structural level, noise in the middle of a range.
+
+MISTAKES WITH THE COMBINED STACK
+- Acting on the fastest tool (LSMA) alone while ignoring what the two slower tools are saying, as shown in the first new worked example above. A fast signal that contradicts an intact slower regime is a warning to be cautious, not a green light to trade.
+- Confusing a pullback for a reversal. This is the single most repeated theme across all three tools in this guide (the TMA's deceleration trap, the Guppy's fading-versus-backed distinction, and the LSMA's curvature-without-slope-agreement trap) precisely because it is the most common and most expensive mistake in trend trading generally. When only the fastest layer disagrees with the two slower ones, the correct read defined in Part 5 is "waiting state," not "counter-trade."
+- Forcing a trade when the honest read is no-trade recognition. When all three tools are flat, intertwined, or inside their respective dead zones at once, that combination is itself valid information — it means stand down, not "look harder for a signal that isn't there."
+- Chasing full alignment after it is already obvious to everyone. By the time all three tools have aligned cleanly, a meaningful part of the move has typically already happened, especially on the slowest tool. This is not a flaw to fix — it is the honest cost of demanding real confirmation instead of guessing early — but it is worth knowing going in, so a trader is not surprised or tempted to chase.
+
+
+==================================================
+PART 8 — DECISION CHECKLIST: READING THE THREE TOOLS AT A LEVEL
+==================================================
+
+Use this in order, every time price approaches a structural level (support, resistance, or any other level identified through price structure — this system never generates the level itself, only qualifies what happens there).
+
+STEP 1 — CHECK THE TMA REGIME FIRST
+- What is the current order of the four TMA lines? Fully bullish (21/50/100/200 top to bottom), fully bearish (reverse order), or mixed/transitioning?
+- Is the short group/long group spread widening, flat, or narrowing, and in which direction do both groups currently point?
+- Write down (mentally or literally) the default bias this regime implies before looking at anything else. This bias is what everything downstream needs to either confirm or actively overturn.
+
+STEP 2 — CHECK GUPPY PARTICIPATION AND KILL GATES
+- Are the two Guppy ribbons expanded and separated, compressed, or intertwined?
+- Is either ribbon in extreme expansion? If yes, the corresponding kill gate is active — no counter-direction trade exists right now, regardless of anything else. Stop here if this applies.
+- If a PRE-BULL/PRE-BEAR or crossover signal is present, is the investor ribbon backing it (compressing/rolling the same direction) or fading it (staying fanned against it)?
+
+STEP 3 — WAIT FOR PRICE TO REACH THE LEVEL, THEN CHECK LSMA CONFIRMATION
+- At the moment price is at the level: what is LSMA slope doing — POS, NEG, or FLAT (dead zone)?
+- Is curvature inflecting, and if so, does slope already agree with the direction curvature is pointing? (If not, this is the deceleration trap — do not act on it.)
+- Does the LSMA reading agree with the trade direction implied by Steps 1 and 2 at this exact location?
+
+STEP 4 — CLASSIFY THE OVERALL STATE BEFORE ACTING
+- All three agree: full alignment — take the signal.
+- Slower two agree, LSMA against: waiting state — no trade yet, watch for the LSMA to rotate back into agreement at the level.
+- Faster two turning against an intact TMA regime: early reversal sequence — reduced size only, and only if it is happening at a meaningful level, per Part 4.2.
+- All three flat, intertwined, or dead-zoned: no-trade recognition — stand down.
+
+Never skip a step to save time. The entire value of this checklist is that each step exists to catch a specific, documented failure mode of the step before it.
+
+
+==================================================
+PART 9 — QUICK REFERENCE TABLE
+==================================================
+
+INDICATOR: TMA Ribbon 21/50/100/200
+CROSS UP: Short group (21/50 avg) crosses above long group (100/200 avg); both groups pointing up. Macro regime turns bullish. Slowest, strongest.
+CROSS DOWN: Short group crosses below long group; both groups pointing down. Macro regime turns bearish.
+SPEED / ROLE: Slowest — answers "what regime." Never trade off it directly.
+
+INDICATOR: Guppy GMMA 3-15 / 30-60
+CROSS UP: Trader ribbon fans up out of compression (PRE-BULL), then crosses above investor ribbon. Participation confirms long.
+CROSS DOWN: Trader ribbon fans down out of compression (PRE-BEAR), then crosses below investor ribbon. Participation confirms short.
+SPEED / ROLE: Middle — answers "who is participating." Extreme expansion states are hard kill gates on the opposite direction.
+
+INDICATOR: LSMA 21
+CROSS UP: Slope crosses above +threshold into POS; curvature inflects up with slope agreement. Momentum confirms long at the level.
+CROSS DOWN: Slope crosses below -threshold into NEG; curvature inflects down with slope agreement. Momentum confirms short at the level.
+SPEED / ROLE: Fastest — answers "does the moment confirm." Confirmation tool at a level, not a standing entry trigger.
+
+RULE OF THUMB: The TMA ribbon tells you what the market is. The Guppy tells you who is in it. The LSMA(21) tells you whether the moment confirms. Structure picks the spot — these three decide whether the spot gets traded.
+
+
+==================================================
+PART 10 — GLOSSARY
+==================================================
+
+BAR — one unit of price data on a chart (for example, one minute, one hour, or one day), showing the open, high, low, and close for that period.
+
+CLOSE — the last traded price within a given bar.
+
+COMPRESSION — when the lines of a ribbon move close together and start overlapping, indicating the groups they represent no longer clearly disagree, and often signaling hesitation or an upcoming change.
+
+CROSSOVER (CROSS) — the point where one moving average or group passes above or below another.
+
+CURVATURE — whether the slope of the LSMA's fitted line is currently getting steeper (accelerating) or less steep (decelerating). Curvature describes the rate of change of the slope, not the slope itself.
+
+DEAD ZONE — a band around zero within which the LSMA's slope is treated as FLAT (no signal), rather than reading every tiny wiggle above or below zero as a directional cross. Exists to filter out noise in sideways markets.
+
+DOUBLE-SMOOTHED — an average calculated by applying the averaging process twice (an average of an average), which is how the Triangular Moving Average is built. Produces a smoother, laggier line than a single average of the same length.
+
+EMA (EXPONENTIAL MOVING AVERAGE) — a moving average that weights recent prices more heavily than older ones, making it react faster to new information than a simple moving average of the same length.
+
+EXPANSION — when the lines of a ribbon spread apart and separate, indicating stronger agreement or conviction within the group the ribbon represents.
+
+FIBONACCI NUMBERS — a sequence (1, 1, 2, 3, 5, 8, 13, 21, 34, 55, and so on) where each number is the sum of the two before it. Certain values from this sequence (like 21) are commonly used as moving average lengths in technical analysis by convention.
+
+GMMA (GUPPY MULTIPLE MOVING AVERAGE) — the two-ribbon, twelve-EMA indicator created by Daryl Guppy, consisting of a short-term "trader" ribbon and a long-term "investor" ribbon.
+
+GOLDEN CROSS / DEATH CROSS — the well-known convention where a 50-period moving average crossing above a 200-period moving average is read as a long-term bullish signal (golden cross), and crossing below is read as bearish (death cross). Both are lagging, trend-confirming signals, not predictive ones.
+
+KILL GATE — a condition in this system (specifically, extreme Guppy ribbon expansion) that hard-blocks trades in the opposite direction, overriding what any faster signal shows.
+
+LAG — the delay between something actually happening in price and a moving average reflecting that change. All moving averages have some lag by design, because they are built from past data.
+
+LEAST SQUARES — a mathematical method for fitting the line that best represents a set of data points, by minimizing the sum of the squared distances between the line and each point. The basis of the LSMA.
+
+LEVEL (STRUCTURAL LEVEL) — a specific price identified through prior price action (such as a former high, low, or area where price has repeatedly reacted) that traders watch for a reaction. This system does not generate levels; it qualifies what happens when price reaches one already identified through price structure.
+
+LSMA (LEAST-SQUARES MOVING AVERAGE) — also called an endpoint moving average or linear regression moving average; the current endpoint of a least-squares regression line fitted to the most recent N closes, recalculated on every new bar.
+
+MOVING AVERAGE — a calculation that averages a sliding window of recent prices, recalculated as the window moves forward one bar at a time, used to smooth out short-term noise and reveal underlying trend.
+
+NO-TRADE RECOGNITION — the state where all three tools in this system are flat, intertwined, or in their dead zones at once, meaning no regime, participation signal, or momentum confirmation currently exists.
+
+ORDERING (LINE ORDER) — the vertical stacking order of the four TMA lines on the chart (for example, 21 on top, 200 on bottom for a bullish state), used as a quick visual check of regime health.
+
+PRE-BULL / PRE-BEAR — the Guppy signal where the trader ribbon fans out of compression before any crossover of the investor ribbon occurs; the earliest, least-confirmed signal in the GMMA.
+
+REGIME — the broad, slow-moving directional state of the market (bullish, bearish, or undefined), as determined by the slowest tool in this system, the TMA ribbon.
+
+RIBBON — a group of several moving averages of different lengths plotted together on the same chart, read as a set rather than as individual lines.
+
+SLOPE — the direction and steepness of the LSMA's fitted regression line at the current bar; read through the dead zone as POS, NEG, or FLAT.
+
+SMA (SIMPLE MOVING AVERAGE) — the most basic moving average, where every price in the averaging window counts equally regardless of age.
+
+SPREAD — the distance between two moving averages or group averages; widening spread signals expansion/conviction, narrowing spread signals compression/hesitation.
+
+TMA (TRIANGULAR MOVING AVERAGE) — a double-smoothed simple moving average that weights the middle of its data window more heavily than the edges, producing a smoother but laggier line than a standard SMA.
+
+WHIPSAW — a rapid, repeated back-and-forth false signal, typically produced when a fast-reacting indicator is used in a sideways or choppy market without a filter (such as a dead zone) to suppress noise.
+
+
+==================================================
+PART 11 — HONEST LIMITATIONS
+==================================================
+
+No combination of moving averages, however well constructed, escapes the fact established in Part 1: every moving average, and every tool built from one, describes the past. This system does not predict the future — it filters and qualifies what has already started happening, as quickly and as reliably as its layered design allows. Three specific weaknesses are worth naming plainly, along with exactly what in this system's design works to reduce each one — and what it cannot fully solve.
+
+CHOP (SIDEWAYS, DIRECTIONLESS MARKETS) — Every moving average family struggles here, because there is no real trend for any of them to describe; a purely random walk will still make every fast indicator flicker between signals. This system's primary defense is the LSMA's dead zone (Part 4.3) and the explicit no-trade recognition state (Part 5), which are both designed specifically to recognize genuine chop and output "nothing to trade" rather than force a false signal. What it cannot fully solve: chop can still produce brief, convincing-looking fake-outs on the fastest layer (the LSMA) even inside the dead zone's filtering, which is exactly why the system requires the slower two layers to agree before treating anything as tradeable — a false signal on one fast layer, alone, is designed to be insufficient to act on.
+
+NEWS SHOCKS AND GAPS — A sudden, large, discontinuous price move driven by a news event (an earnings surprise, an economic release, a geopolitical shock) is not something any moving-average-based system can see coming, because by definition it did not exist in the recent price history any of these tools are built from. This system's design does not prevent the shock itself; what it does is prevent a trader from fighting the aftermath once it registers. A large gap will typically snap the TMA spread, flip the Guppy ribbons, and blow the LSMA slope through its dead zone within a few bars — and the kill gate and regime-alignment rules will then correctly block counter-trend trades into the new, shocked condition rather than fading it on the assumption of "mean reversion." What it cannot solve: the first move itself, and any position already open when the shock hits, are outside what any of these three tools can protect against. This is a structural limitation of the entire family of tools, not a flaw specific to this system.
+
+LAG — As established throughout this guide, lag is not a bug that slipped into the design; it is the direct, unavoidable cost of the smoothing that makes these tools useful for filtering noise in the first place. The system's answer to lag is not to eliminate it (which is not possible) but to deliberately stack tools of different speeds so that the fastest one (the LSMA) provides confirmation at the point of decision, while the two slower ones prevent that fast layer's own reactivity from being traded in isolation. The unavoidable trade-off that remains: by the time all three tools genuinely agree, a real portion of the move — sometimes a large portion, especially on the TMA's slowest confirmations — has already happened. This system trades confirmation for certainty over catching the exact top or bottom, on purpose, and that trade-off should be understood and accepted going in rather than discovered with frustration later.
+
+None of these limitations are reasons not to use the system. They are the reasons it is built the way it is — three tools, three speeds, and a set of explicit kill gates and no-trade states, rather than one indicator promising more than any single moving average can honestly deliver.
+
+
+==================================================
+CLOSING NOTE
+==================================================
+
+Every rule, signal name, and worked example from the original source guide appears in this expanded edition unchanged. What has been added — the foundations, the origins, the "why" beneath each rule, the new examples, the mistakes list, the checklist, the table, the glossary, and the honest limitations — exists to make sure nothing in the system has to be taken on faith. Every number was chosen for a reason, every rule exists to block a specific, named failure mode, and every signal answers exactly one of three questions: what regime is this, who is participating, and does this moment confirm. Structure still picks the spot. These three tools only ever decide whether the spot gets traded.
+
+
+------------------------------------------------
+Expanded edition prepared 2026-07-10.
+Source document: TMA_Guppy_LSMA_Guide_v3.docx (all system rules,
+signal definitions, and original examples preserved unchanged).
+Added material verified against public sources, including
+guppytraders.com, StockCharts ChartSchool, TradingView, and
+TrendSpider education content. One detail deliberately left
+imprecise: the exact year the GMMA was introduced, which public
+sources state inconsistently — this guide says only "in the 1990s."
+------------------------------------------------

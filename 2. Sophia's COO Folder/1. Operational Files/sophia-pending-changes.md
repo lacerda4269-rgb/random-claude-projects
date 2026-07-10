@@ -93,7 +93,7 @@ True post-project items only. Applied after project closes at AAR.
 
 | # | Triage | Status | C&P | Source / Origin | Agent(s) Affected | Session Identified |
 |---|--------|--------|-----|-----------------|-------------------|--------------------|
-| 1 | 9 (S1) | Pending AAR | Getting-Started.md Phase 0 lacks a governance-docs update step — add a Phase 0 action that triggers the Item 141 three-doc update (Reference, Tree, TreeView) whenever a folder is renamed or files are created. Source of Gotcha Entry 1. | MUIP source material (`Getting-Started.md`) | Sophia (owner); all | 1 |
+| 1 | 9 (S3) | Pending AAR | Governance-docs update step is missing — and its scope should be **broader than Phase 0**. Original: add a Phase 0 action triggering the Item 141 three-doc update (Reference, Tree, TreeView) on any folder rename/file creation. **Broadened at S3 (TLL Entry 4):** the drift trigger is *any* structural change, whenever/by whomever it originates — including operator between-sessions changes — so the fix should be a **standing session-start structure-drift check** (confirm live structure still matches the governance tree; if diverged, run the Item 141 update that session), not only a Phase 0 step. Implementation candidate: a **Cosmo hook** that diffs live folder structure vs. the recorded tree and prompts the update. Source of Gotcha Entry 1 (counter → 2, recurred S3 on Jay's housekeeping move); both recurrences were caught only by manual vigilance — the gap this item closes. | MUIP source material (`Getting-Started.md`); Cosmo (hook build, if approved) | Sophia (owner); Cosmo; all | 1 (recurred 3) |
 | 2 | 8 (S1) | Pending AAR | task-tracker blank template has no native multi-sub-project structure. For container-style projects, add a repeatable `## Mini-Project: [Name]` section pattern so each sub-project tracks cleanly. Adapted inline this session; formalize in the blank. | MUIP source material (`task-tracker (Blank Template).md`) | Sophia (owner); Cosmo (if built) | 1 |
 
 ---
@@ -109,6 +109,8 @@ Active behavioral standards currently being tracked — behaviors established op
 
 ---
 
+*Updated: Session 3 — 2026-07-10 (close review: AAR #1 scope broadened per TLL Entry 4 — session-start structure-drift check + Cosmo hook candidate; no new items queued, no terminal-status transfers — Completed Changes stays empty; counts unchanged)*
+*Updated: Session 3 — 2026-07-10 (Pending AAR #1 recurrence note added after Jay's housekeeping move; re-rated 9 (S3))*
 *Updated: Session 1 — 2026-07-06 (2 items queued to Pending AAR at session close)*
 *Maintained by: Sophia*
 *Reports to: Sage*
